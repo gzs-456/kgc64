@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_areaMapper">
+    <!--专区子版块-->
+    <resultMap id="areaChildMap" type="com.kgc.pojo.Tb_area">
+        <id column="id" property="id"></id>
+        <result column="areaname" property="areaname"></result>
+        <result column="introduce" property="introduce"></result>
+        <result column="areaAdmin" property="areaAdmin"></result>
+        <result column="clicknum" property="clicknum"></result>
+        <association property="areaChild" javaType="com.kgc.pojo.Tb_areaChild">
+            <id column="introduceChildId" property="id"></id>
+            <result column="areaname" property="areaname"></result>
+            <result column="introduce" property="introduce"></result>
+            <result column="areaAdmin" property="areaAdmin"></result>
+            <result column="clicknum" property="clicknum"></result>
+        </association>
+    </resultMap>
+
+    <!--分页,根据专区名称查询所有-->
+    <select id="getTb_areaPage" resultMap="areaChildMap">
+        SELECT tb_area.*,tb_areaChild.* FROM tb_area
+        INNER JOIN tb_areaChild
+        ON tb_areaChild.id=tb_area.introduceChildId
+        where 1=1
+        <if test="areaname!=null and areaname!=''"> AND tb_area.areaname LIKE CONCAT('%',#{areaname},'%')</if>
+        order by clicknum desc
+        limit ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultMap="areaChildMap">
+        SELECT COUNT(*) FROM tb_area
+        INNER JOIN tb_areaChild
+        ON tb_areaChild.id=tb_area.introduceChildId
+        where 1=1
+        <if test="areaname!=null and areaname!=''"> AND tb_area.areaname LIKE CONCAT('%',#{areaname},'%')</if>
+    </select>
+
+</mapper> 

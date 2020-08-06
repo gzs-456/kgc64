@@ -1,6 +1,7 @@
 package com.kgc.mapper;
 
 import com.kgc.pojo.Tb_areaChild;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 import java.util.Map;
@@ -8,6 +9,7 @@ import java.util.Map;
 /**
  * 专区子版块表provider接口
  */
+@Mapper
 public interface Tb_areaChildMapper {
     //分页,根据专区子版块名称查询所有
     public List<Tb_areaChild> getTb_areaChildPage(Map<String, Object> map);

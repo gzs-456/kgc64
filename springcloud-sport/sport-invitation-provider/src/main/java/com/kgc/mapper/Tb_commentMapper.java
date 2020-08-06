@@ -2,6 +2,7 @@ package com.kgc.mapper;
 
 
 import com.kgc.pojo.Tb_comment;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 import java.util.Map;
@@ -9,6 +10,7 @@ import java.util.Map;
 /**
  * 帖子评论表provider接口
  */
+@Mapper
 public interface Tb_commentMapper {
     //分页，根据帖子编号查询所有
     public List<Tb_comment>getTb_commentPage(Map<String, Object> map);

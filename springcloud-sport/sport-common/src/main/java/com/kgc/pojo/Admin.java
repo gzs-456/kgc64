@@ -7,7 +7,7 @@ public class Admin implements Serializable {
     private String loginname;
     private String password;
     private String state;
-
+    //   hhhhhhs
     public Integer getId() {
         return id;
     }

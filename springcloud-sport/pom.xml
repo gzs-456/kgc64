@@ -15,6 +15,8 @@
         <module>sport-user-comsumer</module>
         <module>sport-invitation-comsumer</module>
         <module>sport-invitation-provider</module>
+        <module>sport-friend-provider</module>
+        <module>sport-friend-consumer</module>
     </modules>
 
     <parent>

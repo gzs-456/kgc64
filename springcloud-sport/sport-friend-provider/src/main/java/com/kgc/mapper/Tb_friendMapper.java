@@ -12,7 +12,7 @@ import java.util.Map;
  */
 @Mapper
 public interface Tb_friendMapper {
-    //分页，根据好友编号查询所有的好友
+    //分页，根据用户编号查询所有的好友
     public List<Invitation_friend> getTb_friendPage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
 
@@ -26,5 +26,5 @@ public interface Tb_friendMapper {
     public int updateTb_friend(Invitation_friend friend);
 
     //根据好友ID删除某个好友
-    public int deleteTb_friend(String userid);
+    public int deleteTb_friend(String friendid);
 }

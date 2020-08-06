@@ -3,7 +3,7 @@ package com.kgc.pojo;
 /**
  * 帖子表实体类
  */
-public class Tb_invitation {
+public class Invitation_invitation {
     private Integer id;//帖子编号
     private String title;//帖子标题
     private String iname;//发布者昵称

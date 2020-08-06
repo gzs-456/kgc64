@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kgc.mapper.Tb_invitationMapper">
     <!--专区map-->
-    <resultMap id="areaMap" type="com.kgc.pojo.Tb_invitation">
+    <resultMap id="areaMap" type="com.kgc.pojo.Invitation_invitation">
         <id column="id" property="id"></id>
         <result column="title" property="title"></result>
         <result column="iname" property="iname"></result>
@@ -50,7 +50,7 @@
     </resultMap>
 
     <!--分页-->
-    <select id="getTb_invitationPage" resultType="com.kgc.pojo.Tb_invitation">
+    <select id="getTb_invitationPage" resultType="com.kgc.pojo.Invitation_invitation">
         SELECT * FROM tb_invitation WHERE 1=1
         <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
         <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>

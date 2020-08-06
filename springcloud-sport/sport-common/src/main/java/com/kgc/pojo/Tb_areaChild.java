@@ -5,6 +5,7 @@ package com.kgc.pojo;
  */
 public class Tb_areaChild {
     private Integer id;//专区子版块编号
+    private String areaname;//专区子版块名称
     private String introduce;//专区子版块介绍
     private String areaAdmin;//专区子版块版主或管理者
     private Integer clicknum;//专区点击数,默认为0
@@ -39,5 +40,13 @@ public class Tb_areaChild {
 
     public void setClicknum(Integer clicknum) {
         this.clicknum = clicknum;
+    }
+
+    public String getAreaname() {
+        return areaname;
+    }
+
+    public void setAreaname(String areaname) {
+        this.areaname = areaname;
     }
 }

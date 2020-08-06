@@ -9,6 +9,7 @@ public class Tb_area {
     private String introduce;//版块介绍
     private String areaAdmin;//版主或管理者
     private Integer clicknum;//专区点击数,默认为0
+    private Integer introduceChildId;//专区子版块外键
     private Tb_areaChild areaChild;//专区子版块对象
 
     public Integer getId() {
@@ -57,5 +58,13 @@ public class Tb_area {
 
     public void setAreaChild(Tb_areaChild areaChild) {
         this.areaChild = areaChild;
+    }
+
+    public Integer getIntroduceChildId() {
+        return introduceChildId;
+    }
+
+    public void setIntroduceChildId(Integer introduceChildId) {
+        this.introduceChildId = introduceChildId;
     }
 }

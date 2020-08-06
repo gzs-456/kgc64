@@ -13,6 +13,8 @@ public class Tb_invitation {
     private Integer snum;//点赞数，默认为0
     private Integer rnum;//推荐数，默认为0
     private Integer seenum;//浏览数，默认为0
+    private Integer areaid;//专区外键
+    private Integer cid;//评论外键
     private Tb_area area;//专区对象
     private Tb_comment comment;//评论对象
 
@@ -103,5 +105,21 @@ public class Tb_invitation {
 
     public void setComment(Tb_comment comment) {
         this.comment = comment;
+    }
+
+    public Integer getAreaid() {
+        return areaid;
+    }
+
+    public void setAreaid(Integer areaid) {
+        this.areaid = areaid;
+    }
+
+    public Integer getCid() {
+        return cid;
+    }
+
+    public void setCid(Integer cid) {
+        this.cid = cid;
     }
 }

@@ -2,6 +2,7 @@ package com.kgc.mapper;
 
 
 import com.kgc.pojo.Tb_friend;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 import java.util.Map;
@@ -9,6 +10,7 @@ import java.util.Map;
 /**
  * 好友表provider接口
  */
+@Mapper
 public interface Tb_friendMapper {
     //分页，根据好友编号查询所有的好友
     public List<Tb_friend> getTb_friendPage(Map<String, Object> map);

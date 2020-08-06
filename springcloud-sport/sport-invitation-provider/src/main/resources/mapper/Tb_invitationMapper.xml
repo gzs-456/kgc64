@@ -54,10 +54,71 @@
         SELECT * FROM tb_invitation WHERE 1=1
         <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
         <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>
-        <if test=""></if>
-        <if test=""></if>
-        <if test=""></if>
-        <if test=""></if>
+        <if test="ftime!=null and ftime!=''"> and ftime like CONCAT('%',#{ftime},'%') order by ftime desc</if>
+        <if test="snum!=null and snum!=-1"> and snum=#{snum} order by snum desc</if>
+        <if test="rnum!=null and rnum!=-1"> and rnum=#{rnum} order by rnum desc</if>
+        <if test="seenum!=null and seenum!=-1"> and seenum=#{seenum} order by seenum desc</if>
         limit ${pageIndex},${pageSize}
     </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_invitation WHERE 1=1
+        <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
+        <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>
+        <if test="ftime!=null and ftime!=''"> and ftime like CONCAT('%',#{ftime},'%') order by ftime desc</if>
+        <if test="snum!=null and snum!=-1"> and snum=#{snum} order by snum desc</if>
+        <if test="rnum!=null and rnum!=-1"> and rnum=#{rnum} order by rnum desc</if>
+        <if test="seenum!=null and seenum!=-1"> and seenum=#{seenum} order by seenum desc</if>
+    </select>
+
+    <!--帖子表，专区表两表连接查询-->
+    <select id="getTb_invitationAndTb_area" resultMap="areaMap">
+        SELECT tb_invitation.*,tb_area.* FROM tb_invitation
+        INNER JOIN tb_area
+        ON tb_area.id=tb_invitation.areaid
+        order by ftime desc
+    </select>
+
+    <!--帖子表，评论表两表连接查询-->
+    <select id="getTb_invitationAndTb_comment" resultMap="commentMap">
+         SELECT tb_invitation.*,tb_comment.* FROM tb_invitation
+         INNER JOIN tb_comment
+         ON tb_comment.id=tb_invitation.cid
+         ORDER BY ftime
+    </select>
+
+    <!--根据帖子编号查询某一个帖子信息-->
+    <select id="getTb_invitationById" resultType="com.kgc.pojo.Tb_invitation">
+          SELECT * FROM tb_invitation WHERE id=#{id}
+    </select>
+
+    <!--添加新的帖子-->
+    <insert id="addTb_invitation" parameterType="com.kgc.pojo.Tb_invitation">
+        INSERT INTO tb_invitation VALUES(NULL,#{title},,#{iname},#{content},now(),now(),default,default,default,#{areaid},#{cid})
+    </insert>
+
+    <!--更新帖子信息-->
+    <update id="updateTb_invitation" parameterType="com.kgc.pojo.Tb_invitation">
+        UPDATE tb_invitation SET title=#{title},iname=#{iname},content=#{content},utime=now(),areaid=#{areaid},cid=#{cid}
+        WHERE id=#{id}
+    </update>
+
+    <!--根据帖子ID更新帖子点赞数-->
+    <select id="updateSnum" parameterType="int">
+        UPDATE tb_invitation SET snum=snum+1 WHERE id=#{id}
+    </select>
+
+    <!--根据帖子ID更新帖子推荐数-->
+    <select id="updateRnum" parameterType="int">
+        UPDATE tb_invitation SET rnum=rnum+1 WHERE id=#{id}
+    </select>
+
+    <!--根据帖子ID更新帖子浏览数-->
+    <select id="updateSeenum" parameterType="int">
+        UPDATE tb_invitation SET seenum=seenum+1 WHERE id=#{id}
+    </select>
+
+    <!--据ID删除某个帖子-->
+    <delete id="deleteTb_invitation" parameterType="int">
+        DELETE FROM tb_invitation WHERE id=#{id}
+    </delete>
 </mapper> 

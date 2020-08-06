@@ -18,7 +18,7 @@ public class Tb_invitation {
     private Invitation_area area;//专区对象
     private Invitation_comment comment;//评论对象
 
-
+    //jbhbbhbh
     public Integer getId() {
         return id;
     }

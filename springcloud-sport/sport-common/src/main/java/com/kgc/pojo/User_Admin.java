@@ -2,7 +2,7 @@ package com.kgc.pojo;
 
 import java.io.Serializable;
 
-public class Admin implements Serializable {
+public class User_Admin implements Serializable {
     private Integer id;
     private String loginname;
     private String password;

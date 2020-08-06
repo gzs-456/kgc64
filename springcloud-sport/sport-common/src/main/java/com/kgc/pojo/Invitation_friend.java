@@ -3,7 +3,7 @@ package com.kgc.pojo;
 /**
  * 好友表实体类
  */
-public class Tb_friend {
+public class Invitation_friend {
     private Integer id;
     private String userid;//用户编号
     private String friendid;//好友编号

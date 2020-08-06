@@ -3,7 +3,7 @@ package com.kgc.pojo;
 /**
  * 聊天记录表实体类
  */
-public class Tb_chatrecord {
+public class Invitation_chatrecord {
     private Integer id;//聊天记录编号
     private String putid;//发送方编号
     private String gainid;//接收方编号

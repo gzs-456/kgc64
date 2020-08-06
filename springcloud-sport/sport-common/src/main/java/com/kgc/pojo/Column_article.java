@@ -1,6 +1,6 @@
 package com.kgc.pojo;
 
-public class Tb_article {
+public class Column_article {
     private String id;
     private String columnid;
     private String userid;

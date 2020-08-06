@@ -15,8 +15,8 @@ public class Tb_invitation {
     private Integer seenum;//浏览数，默认为0
     private Integer areaid;//专区外键
     private Integer cid;//评论外键
-    private Tb_area area;//专区对象
-    private Tb_comment comment;//评论对象
+    private Invitation_area area;//专区对象
+    private Invitation_comment comment;//评论对象
 
 
     public Integer getId() {
@@ -91,19 +91,19 @@ public class Tb_invitation {
         this.seenum = seenum;
     }
 
-    public Tb_area getArea() {
+    public Invitation_area getArea() {
         return area;
     }
 
-    public void setArea(Tb_area area) {
+    public void setArea(Invitation_area area) {
         this.area = area;
     }
 
-    public Tb_comment getComment() {
+    public Invitation_comment getComment() {
         return comment;
     }
 
-    public void setComment(Tb_comment comment) {
+    public void setComment(Invitation_comment comment) {
         this.comment = comment;
     }
 

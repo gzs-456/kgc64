@@ -3,7 +3,7 @@ package com.kgc.pojo;
 /**
  * 专区子版块表实体类
  */
-public class Tb_areaChild {
+public class Invitation_areaChild {
     private Integer id;//专区子版块编号
     private String areaname;//专区子版块名称
     private String introduce;//专区子版块介绍

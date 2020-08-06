@@ -3,14 +3,14 @@ package com.kgc.pojo;
 /**
  * 帖子专区表实体类
  */
-public class Tb_area {
+public class Invitation_area {
     private Integer id;//专区编号
     private String areaname;//专区名称
     private String introduce;//版块介绍
     private String areaAdmin;//版主或管理者
     private Integer clicknum;//专区点击数,默认为0
     private Integer introduceChildId;//专区子版块外键
-    private Tb_areaChild areaChild;//专区子版块对象
+    private Invitation_areaChild areaChild;//专区子版块对象
 
     public Integer getId() {
         return id;
@@ -52,11 +52,11 @@ public class Tb_area {
         this.clicknum = clicknum;
     }
 
-    public Tb_areaChild getAreaChild() {
+    public Invitation_areaChild getAreaChild() {
         return areaChild;
     }
 
-    public void setAreaChild(Tb_areaChild areaChild) {
+    public void setAreaChild(Invitation_areaChild areaChild) {
         this.areaChild = areaChild;
     }
 

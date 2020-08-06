@@ -3,7 +3,7 @@ package com.kgc.pojo;
 /**
  * 帖子评论表实体类
  */
-public class Tb_comment {
+public class Invitation_comment {
     private Integer id;//评论编号
     private String cname;//评论人名称
     private String content;//评论内容

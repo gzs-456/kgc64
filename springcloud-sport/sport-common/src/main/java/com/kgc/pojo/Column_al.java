@@ -1,6 +1,6 @@
 package com.kgc.pojo;
 
-public class Tb_al {
+public class Column_al {
     private String aid;
     private String lid;
 

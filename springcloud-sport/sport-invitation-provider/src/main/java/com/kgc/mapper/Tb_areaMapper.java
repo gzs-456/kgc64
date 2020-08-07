@@ -11,15 +11,12 @@ import java.util.Map;
  */
 @Mapper
 public interface Tb_areaMapper {
-    //分页
+    //分页,根据专区名称查询所有
     public List<Invitation_area> getTb_areaPage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
 
     //帖子表，专区表两表连接查询,根据帖子编号查询所有专区
-    public List<Invitation_area> getById(Integer invitationId);
-
-    //查询所有的专区信息
-    public List<Invitation_area> getAllTb_area();
+    public List<Invitation_area> getByinvitationId(Integer invitationId);
 
     //根据专区编号查询某一个专区介绍信息
     public Invitation_area getTb_areaById(Integer id);

@@ -7,9 +7,9 @@
         <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
         <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>
         <if test="ftime!=null and ftime!=''"> and ftime like CONCAT('%',#{ftime},'%') order by ftime desc</if>
-        <if test="snum!=null and snum!=-1"> and snum=#{snum} order by snum desc</if>
-        <if test="rnum!=null and rnum!=-1"> and rnum=#{rnum} order by rnum desc</if>
-        <if test="seenum!=null and seenum!=-1"> and seenum=#{seenum} order by seenum desc</if>
+        <if test="snum!=null and snum==-1">  order by snum desc</if>
+        <if test="rnum!=null and rnum==-1">  order by rnum desc</if>
+        <if test="seenum!=null and seenum==-1"> order by seenum desc</if>
         limit ${pageIndex},${pageSize}
     </select>
     <select id="getCount" resultType="int">
@@ -17,9 +17,9 @@
         <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
         <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>
         <if test="ftime!=null and ftime!=''"> and ftime like CONCAT('%',#{ftime},'%') order by ftime desc</if>
-        <if test="snum!=null and snum!=-1"> and snum=#{snum} order by snum desc</if>
-        <if test="rnum!=null and rnum!=-1"> and rnum=#{rnum} order by rnum desc</if>
-        <if test="seenum!=null and seenum!=-1"> and seenum=#{seenum} order by seenum desc</if>
+        <if test="snum!=null and snum==-1">  order by snum desc</if>
+        <if test="rnum!=null and rnum==-1">  order by rnum desc</if>
+        <if test="seenum!=null and seenum==-1"> order by seenum desc</if>
     </select>
 
     <!--根据帖子编号查询某一个帖子信息-->
@@ -29,12 +29,12 @@
 
     <!--添加新的帖子-->
     <insert id="addTb_invitation" parameterType="com.kgc.pojo.Invitation_invitation">
-        INSERT INTO tb_invitation VALUES(NULL,#{title},,#{iname},#{content},now(),now(),default,default,default,#{areaid},#{cid})
+        INSERT INTO tb_invitation VALUES(NULL,#{title},#{iname},#{content},NOW(),NOW(),DEFAULT,DEFAULT,DEFAULT)
     </insert>
 
     <!--更新帖子信息-->
     <update id="updateTb_invitation" parameterType="com.kgc.pojo.Invitation_invitation">
-        UPDATE tb_invitation SET title=#{title},iname=#{iname},content=#{content},utime=now(),areaid=#{areaid},cid=#{cid}
+        UPDATE tb_invitation SET title=#{title},iname=#{iname},content=#{content},utime=now()
         WHERE id=#{id}
     </update>
 

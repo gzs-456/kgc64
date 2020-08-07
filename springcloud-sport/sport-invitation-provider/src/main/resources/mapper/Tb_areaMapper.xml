@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_areaMapper">
+    <!--分页-->
+    <select id="getTb_areaPage" resultType="com.kgc.pojo.Invitation_area">
+        SELECT * FROM tb_area WHERE 1=1
+        <if test="areaname!=null and areaname!=''"> AND areaname LIKE CONCAT('%',#{areaname},'%')</if>
+        ORDER BY clicknum DESC
+        LIMIT ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_area WHERE 1=1
+        <if test="areaname!=null and areaname!=''"> AND areaname LIKE CONCAT('%',#{areaname},'%')</if>
+        ORDER BY clicknum DESC
+    </select>
+    <resultMap id="invitationMap" type="com.kgc.pojo.Invitation_area">
+        <id column="id" property="id"></id>
+        <result column="areaname" property="areaname"></result>
+        <result column="introduce" property="introduce"></result>
+        <result column="areaAdmin" property="areaAdmin"></result>
+        <result column="clicknum" property="clicknum"></result>
+        <association property="invitation" javaType="com.kgc.pojo.Invitation_invitation">
+            <id column="invitationId" property="id"></id>
+            <result column="title" property="title"></result>
+            <result column="iname" property="iname"></result>
+            <result column="content" property="content"></result>
+            <result column="ftime" property="ftime"></result>
+            <result column="utime" property="utime"></result>
+            <result column="snum" property="snum"></result>
+            <result column="rnum" property="rnum"></result>
+            <result column="seenum" property="seenum"></result>
+        </association>
+    </resultMap>
+    <!--帖子表，专区表两表连接查询,根据帖子编号查询所有专区-->
+    <select id="getByinvitationId" resultMap="invitationMap">
+        SELECT * FROM tb_area
+        INNER JOIN tb_invitation
+        ON tb_invitation.id=tb_area.invitationId
+        WHERE invitationId=#{invitationId}
+    </select>
+
+    <!--根据专区编号查询某一个专区介绍信息-->
+    <select id="getTb_areaById" resultType="com.kgc.pojo.Invitation_area">
+        SELECT * FROM tb_area WHERE id=#{id}
+    </select>
+
+    <!--添加新的专区-->
+    <insert id="addTb_area" parameterType="com.kgc.pojo.Invitation_area">
+        INSERT INTO tb_area VALUES(NULL,#{areaname},#{introduce},#{areaAdmin},default,#{invitationId})
+    </insert>
+
+    <!--更新专区信息-->
+    <update id="updateTb_area" parameterType="com.kgc.pojo.Invitation_area">
+        UPDATE tb_area SET areaname=#{areaname},introduce=#{introduce},areaAdmin=#{areaAdmin},invitationId=#{invitationId}  WHERE id=#{id}
+    </update>
+
+    <!--根据专区ID更新专区的点击数-->
+    <update id="updateClicknum" parameterType="int">
+         UPDATE tb_area SET clicknum=clicknum+1 WHERE id=#{id}
+    </update>
+
+    <!--根据ID删除某个专区-->
+    <delete id="deleteTb_area" parameterType="int">
+        DELETE from tb_area WHERE id=#{id}
+    </delete>
+</mapper> 

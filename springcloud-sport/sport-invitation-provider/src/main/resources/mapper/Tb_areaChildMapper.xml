@@ -4,13 +4,61 @@
     <!--分页,根据专区子版块名称查询所有-->
     <select id="getTb_areaChildPage" resultType="com.kgc.pojo.Invitation_areaChild">
         SELECT * FROM tb_areaChild where 1=1
-        <if test="areaname!=null and areaname!=''"> AND tb_area.areaname LIKE CONCAT('%',#{areaname},'%')</if>
+        <if test="areaname!=null and areaname!=''"> AND areaname LIKE CONCAT('%',#{areaname},'%')</if>
         order by clicknum desc
         limit ${pageIndex},${pageSize}
     </select>
     <select id="getCount" resultType="int">
         SELECT COUNT(*) FROM tb_areaChild where 1=1
-        <if test="areaname!=null and areaname!=''"> AND tb_area.areaname LIKE CONCAT('%',#{areaname},'%')</if>
+        <if test="areaname!=null and areaname!=''"> AND areaname LIKE CONCAT('%',#{areaname},'%')</if>
+    </select>
+
+    <resultMap id="invitationMap" type="com.kgc.pojo.Invitation_areaChild">
+        <id column="id" property="id"></id>
+        <result column="areaname" property="areaname"></result>
+        <result column="introduce" property="introduce"></result>
+        <result column="areaAdmin" property="areaAdmin"></result>
+        <result column="clicknum" property="clicknum"></result>
+        <association property="invitation" javaType="com.kgc.pojo.Invitation_invitation">
+            <id column="invitationId" property="id"></id>
+            <result column="title" property="title"></result>
+            <result column="iname" property="iname"></result>
+            <result column="content" property="content"></result>
+            <result column="ftime" property="ftime"></result>
+            <result column="utime" property="utime"></result>
+            <result column="snum" property="snum"></result>
+            <result column="rnum" property="rnum"></result>
+            <result column="seenum" property="seenum"></result>
+        </association>
+    </resultMap>
+    <!--帖子表，专区子版块表两表连接查询,根据帖子编号查询所有专区子版块-->
+    <select id="getByinvitationId" resultMap="invitationMap">
+        SELECT * FROM tb_areaChild
+        INNER JOIN tb_invitation
+        ON tb_invitation.id=tb_areaChild.invitationId
+        WHERE invitationId=#{invitationId}
+    </select>
+
+    <resultMap id="areaMap" type="com.kgc.pojo.Invitation_areaChild">
+        <id column="id" property="id"></id>
+        <result column="areaname" property="areaname"></result>
+        <result column="introduce" property="introduce"></result>
+        <result column="areaAdmin" property="areaAdmin"></result>
+        <result column="clicknum" property="clicknum"></result>
+        <association property="area" javaType="com.kgc.pojo.Invitation_area">
+            <id column="areaId" property="id"></id>
+            <result column="areaname" property="areaname"></result>
+            <result column="introduce" property="introduce"></result>
+            <result column="areaAdmin" property="areaAdmin"></result>
+            <result column="clicknum" property="clicknum"></result>
+        </association>
+    </resultMap>
+    <!--专区表，专区子版块表两表连接查询,根据专区编号查询所有专区子版块-->
+    <select id="getByareaId" resultMap="areaMap">
+        SELECT * FROM tb_areaChild
+        INNER JOIN tb_area
+        ON tb_area.id=tb_areaChild.areaId
+        WHERE areaId=#{areaId}
     </select>
 
     <!--根据专区子版块编号查询某一个专区子版块介绍信息-->
@@ -20,12 +68,12 @@
 
     <!--添加新的专区子版块-->
     <insert id="addTb_areaChild" parameterType="com.kgc.pojo.Invitation_areaChild">
-        INSERT INTO tb_areaChild VALUES(NULL,#{areaname},#{introduce},#{areaAdmin},default)
+        INSERT INTO tb_areaChild VALUES(NULL,#{areaname},#{introduce},#{areaAdmin},default,#{invitationId},#{areaId})
     </insert>
 
     <!--更新专区子版块信息-->
     <update id="updateTb_areaChild" parameterType="com.kgc.pojo.Invitation_areaChild">
-        UPDATE tb_areaChild SET areaname=#{areaname},introduce=#{introduce},areaAdmin=#{areaAdmin} WHERE id=#{id}
+        UPDATE tb_areaChild SET areaname=#{areaname},introduce=#{introduce},areaAdmin=#{areaAdmin},invitationId=#{invitationId},areaId=#{areaId} WHERE id=#{id}
     </update>
 
     <!--根据专区子版块ID更新专区子版块的点击数-->

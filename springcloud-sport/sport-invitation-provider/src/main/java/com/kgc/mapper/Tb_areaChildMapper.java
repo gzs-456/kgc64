@@ -1,5 +1,6 @@
 package com.kgc.mapper;
 
+import com.kgc.pojo.Invitation_area;
 import com.kgc.pojo.Invitation_areaChild;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -14,6 +15,12 @@ public interface Tb_areaChildMapper {
     //分页,根据专区子版块名称查询所有
     public List<Invitation_areaChild> getTb_areaChildPage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
+
+    //帖子表，专区子版块表两表连接查询,根据帖子编号查询所有专区子版块
+    public List<Invitation_areaChild> getByinvitationId(Integer invitationId);
+
+    //专区表，专区子版块表两表连接查询,根据专区编号查询所有专区子版块
+    public List<Invitation_areaChild> getByareaId(Integer areaId);
 
     //根据专区子版块编号查询某一个专区子版块介绍信息
     public Invitation_areaChild getTb_areaById(Integer id);

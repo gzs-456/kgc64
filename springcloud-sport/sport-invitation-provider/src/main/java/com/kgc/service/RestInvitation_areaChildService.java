@@ -32,8 +32,20 @@ public class RestInvitation_areaChildService {
         return page;
     }
 
+    //帖子表，专区子版块表两表连接查询,根据帖子编号查询所有专区子版块
+    @RequestMapping("/getAreaChildByinvitationId/{invitationId}")
+    public List<Invitation_areaChild> getByinvitationId(@PathVariable("invitationId") Integer invitationId){
+        return tb_areaChildMapper.getByinvitationId(invitationId);
+    }
+
+    //专区表，专区子版块表两表连接查询,根据专区编号查询所有专区子版块
+    @RequestMapping("/getAreaChildByareaId/{areaId}")
+    public List<Invitation_areaChild> getByareaId(@PathVariable("areaId") Integer areaId){
+        return tb_areaChildMapper.getByareaId(areaId);
+    }
+
     //根据专区子版块编号查询某一个专区子版块介绍信息
-    @RequestMapping("/getTb_areaById/{id}")
+    @RequestMapping("/getTb_areaChildById/{id}")
     public Invitation_areaChild getTb_areaById(@PathVariable("id") Integer id){
         return tb_areaChildMapper.getTb_areaById(id);
     }
@@ -51,7 +63,7 @@ public class RestInvitation_areaChildService {
     }
 
     //根据专区子版块ID更新专区子版块的点击数
-    @RequestMapping("/updateClicknum/{id}")
+    @RequestMapping("/updateAreaChildClicknum/{id}")
     public int updateClicknum(@PathVariable("id") Integer id){
         return tb_areaChildMapper.updateClicknum(id);
     }

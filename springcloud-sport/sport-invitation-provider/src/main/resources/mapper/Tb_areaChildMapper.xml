@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_areaChildMapper">
+    <!--分页,根据专区子版块名称查询所有-->
+    <select id="getTb_areaChildPage" resultType="com.kgc.pojo.Invitation_areaChild">
+        SELECT * FROM tb_areaChild where 1=1
+        <if test="areaname!=null and areaname!=''"> AND tb_area.areaname LIKE CONCAT('%',#{areaname},'%')</if>
+        order by clicknum desc
+        limit ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_areaChild where 1=1
+        <if test="areaname!=null and areaname!=''"> AND tb_area.areaname LIKE CONCAT('%',#{areaname},'%')</if>
+    </select>
+
+    <!--根据专区子版块编号查询某一个专区子版块介绍信息-->
+    <select id="getTb_areaById" resultType="com.kgc.pojo.Invitation_areaChild">
+        SELECT * FROM tb_areaChild WHERE id=#{id}
+    </select>
+
+    <!--添加新的专区子版块-->
+    <insert id="addTb_areaChild" parameterType="com.kgc.pojo.Invitation_areaChild">
+        INSERT INTO tb_areaChild VALUES(NULL,#{areaname},#{introduce},#{areaAdmin},default)
+    </insert>
+
+    <!--更新专区子版块信息-->
+    <update id="updateTb_areaChild" parameterType="com.kgc.pojo.Invitation_areaChild">
+        UPDATE tb_areaChild SET areaname=#{areaname},introduce=#{introduce},areaAdmin=#{areaAdmin} WHERE id=#{id}
+    </update>
+
+    <!--根据专区子版块ID更新专区子版块的点击数-->
+    <update id="updateClicknum" parameterType="int">
+        UPDATE tb_areaChild SET clicknum=clicknum+1 WHERE id=#{id}
+    </update>
+
+    <!--根据ID删除某个专区子版块-->
+    <delete id="deleteTb_areaChild" parameterType="int">
+        DELETE FROM tb_areaChild WHERE id=#{id}
+    </delete>
+</mapper> 

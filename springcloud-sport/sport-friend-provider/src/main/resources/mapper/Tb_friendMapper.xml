@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_friendMapper">
+    <select id="getTb_friendPage" resultType="com.kgc.pojo.Invitation_friend">
+      SELECT friendid,islike FROM tb_friend WHERE  userid=#{userid}
+      limit ${index},${size}
+    </select>
+
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_friend
+        WHERE friendid=#{friendid} AND userid=#{userid}
+    </select>
+
+    <insert id="addTb_friend" parameterType="com.kgc.pojo.Invitation_friend">
+        INSERT INTO tb_friend VALUES(NULL,#{userid},#{friendid},#{islike},#{bz})
+    </insert>
+
+    <update id="updateTb_friend" parameterType="com.kgc.pojo.Invitation_friend">
+        UPDATE tb_friend SET bz=#{bz} where friendid=#{friendid} and userid=#{userid}
+    </update>
+
+    <delete id="deleteTb_friend" parameterType="com.kgc.pojo.Invitation_friend">
+        DELETE FROM tb_friend WHERE friendid=#{friendid}
+    </delete>
+</mapper>

@@ -17,5 +17,5 @@ public interface Tb_chatrecordMapper {
 
     //添加新的聊天记录
     public int addTb_chatrecord(Invitation_chatrecord chatrecord);
-
+ 
 }

@@ -27,4 +27,5 @@ public interface Tb_friendMapper {
 
     //根据好友ID删除某个好友
     public int deleteTb_friend(String friendid);
+
 }

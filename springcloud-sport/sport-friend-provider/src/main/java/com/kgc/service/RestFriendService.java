@@ -19,8 +19,8 @@ public class RestFriendService {
     public PageUtil<Invitation_friend> getTb_friendPage(@RequestParam Map<String, Object> param){
         PageUtil page=new PageUtil();
         //当前页面
+        System.out.println(param.get("index").toString());
         Integer index=Integer.parseInt(param.get("index").toString());
-        System.out.println(index);
         page.setPageIndex(index);
         //每页条数
         Integer size=Integer.parseInt(param.get("size").toString());

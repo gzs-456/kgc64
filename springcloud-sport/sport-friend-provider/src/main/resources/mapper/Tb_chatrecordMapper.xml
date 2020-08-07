@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_chatrecordMapper">
+    <select id="getTb_chatrecordPage" resultType="com.kgc.pojo.Invitation_chatrecord">
+        SELECT content FROM tb_chatrecord
+        WHERE putid=#{putid} AND gainid=#{gainid}
+        ORDER BY sendtime
+        limit ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_chatrecord
+        WHERE putid=#{putid} AND gainid=#{gainid}
+    </select>
+    <insert id="addTb_chatrecord" parameterType="com.kgc.pojo.Invitation_chatrecord">
+        INSERT INTO tb_chatrecord VALUES(NULL,#{putid},#{gainid},now(),#{content});
+    </insert>
+</mapper>  

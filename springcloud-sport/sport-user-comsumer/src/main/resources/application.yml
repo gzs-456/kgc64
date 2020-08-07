@@ -1,0 +1,17 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: sport-user-comsumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
+
+#fuzaijunheng

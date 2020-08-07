@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e359151a-fc3d-4a02-9c1b-a16beb1958d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-column-provider/sport-column-provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_area.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_areaChild.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_areaChild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_invitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_invitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/mapper/Tb_chatrecordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/mapper/Tb_friendMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/service/RestChatecordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/service/RestFriendService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Tb_chatrecordMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Tb_friendMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaChildMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaChildMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_commentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_commentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_invitationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_invitationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_areaMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_invitationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_invitationMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -13,6 +31,10 @@
     <ignored path="$PROJECT_DIR$/sport-invitation-comsumer/target/" />
     <ignored path="$PROJECT_DIR$/sport-user-provider/target/" />
     <ignored path="$PROJECT_DIR$/sport-invitation-provider/target/" />
+    <ignored path="$PROJECT_DIR$/sport-column-provider/target/" />
+    <ignored path="$PROJECT_DIR$/sport-friend-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/sport-friend-provider/target/" />
+    <ignored path="$PROJECT_DIR$/sport-column-consumer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,16 +87,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="29" />
-          <entry key="xml" value="9" />
-          <entry key="yml" value="1" />
+          <entry key="java" value="127" />
+          <entry key="xml" value="36" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="29" />
-          <entry key="XML" value="9" />
-          <entry key="YAML" value="1" />
+          <entry key="JAVA" value="127" />
+          <entry key="XML" value="36" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -84,28 +106,55 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="169" />
+          <entry key="java" value="1307" />
           <entry key="txt" value="33" />
-          <entry key="xml" value="1035" />
+          <entry key="xml" value="1880" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="169" />
+          <entry key="JAVA" value="1307" />
           <entry key="PLAIN_TEXT" value="33" />
-          <entry key="SQL" value="16" />
-          <entry key="XML" value="1019" />
+          <entry key="SQL" value="26" />
+          <entry key="XML" value="1854" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_invitationMapper.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaChildService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
+            <state relative-caret-position="180">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_commentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="51" column="19" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_invitationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-507">
+              <caret line="41" column="38" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +165,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="mybatismapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -141,14 +191,25 @@
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Tb_invitation.java" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Tb_areaChild.java" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Tb_area.java" />
-        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_invitationMapper.java" />
-        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaChildMapper.java" />
-        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaMapper.java" />
         <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_chatrecordMapper.java" />
-        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_commentMapper.java" />
         <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_friendMapper.java" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaChildMapper.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_areaChild.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_chatrecord.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_invitation.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_comment.java" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_invitationMapper.java" />
         <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_invitationMapper.xml" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_commentMapper.java" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_commentMapper.xml" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaChildService.java" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_commentService.java" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_invitationService.java" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_areaChildMapper.xml" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaMapper.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_area.java" />
         <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_areaMapper.xml" />
+        <option value="$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaService.java" />
       </list>
     </option>
   </component>
@@ -356,6 +417,49 @@
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
               <item name="sport-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -449,6 +553,16 @@
               <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -468,9 +582,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596693733821" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596760243089" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/db_invitation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -486,6 +606,7 @@
       <recent name="kgc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-invitation-provider\src\main\java\com\kgc\service" />
       <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-invitation-provider\src\main\resources" />
       <recent name="D:\demo\springcloud-sport\sport-common\src\main\java\com\kgc\pojo" />
       <recent name="D:\demo\springcloud-sport\my-eureka\src\main\resources" />
@@ -503,10 +624,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.ProviderApp">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="my-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FriendProviderApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sport-friend-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kgc.FriendProviderApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -521,6 +649,7 @@
     <list>
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.ProviderApp" />
+      <item itemvalue="Spring Boot.FriendProviderApp" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -537,7 +666,7 @@
       <workItem from="1596615230372" duration="206000" />
       <workItem from="1596615588623" duration="49000" />
       <workItem from="1596615650288" duration="40000" />
-      <workItem from="1596674152868" duration="10006000" />
+      <workItem from="1596674152868" duration="32107000" />
     </task>
     <task id="LOCAL-00001" summary="dev-zfc update">
       <created>1596674292510</created>
@@ -567,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1596684921420</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dev-zfc update 2020-08-06">
+      <created>1596693776495</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596693776495</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10960000" />
+    <option name="totallyTimeSpent" value="33061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -581,16 +717,17 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24357034" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.295764" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.10655738" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.42295083" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -614,22 +751,23 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25416037" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.0" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.10655738" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.21639344" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -659,13 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -705,25 +836,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-eureka/src/main/java/com/kgc/EurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-eureka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/ProviderApp.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sport-invitation-provider/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -732,9 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Tb_comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -742,24 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaChildMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_chatrecordMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_commentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -787,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_invitationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Tb_areaChild.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -802,23 +896,6 @@
             <element signature="e#927#928#0" expanded="true" />
             <element signature="e#975#976#0" expanded="true" />
             <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_areaMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -836,10 +913,208 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_chatrecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/Invitation_areaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_areaChild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/ProviderApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-eureka/src/main/java/com/kgc/EurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_invitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_invitationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="37" column="47" selection-start-line="18" selection-start-column="4" selection-end-line="37" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_commentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_invitationMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaChildMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_areaChildMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_commentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_areaMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/mapper/Tb_areaMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaChildService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_commentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_invitationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

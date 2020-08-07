@@ -13,11 +13,6 @@ public class Invitation_invitation {
     private Integer snum;//点赞数，默认为0
     private Integer rnum;//推荐数，默认为0
     private Integer seenum;//浏览数，默认为0
-    private Integer areaid;//专区外键
-    private Integer cid;//评论外键
-    private Invitation_area area;//专区对象
-    private Invitation_comment comment;//评论对象
-
 
     public Integer getId() {
         return id;
@@ -91,35 +86,4 @@ public class Invitation_invitation {
         this.seenum = seenum;
     }
 
-    public Invitation_area getArea() {
-        return area;
-    }
-
-    public void setArea(Invitation_area area) {
-        this.area = area;
-    }
-
-    public Invitation_comment getComment() {
-        return comment;
-    }
-
-    public void setComment(Invitation_comment comment) {
-        this.comment = comment;
-    }
-
-    public Integer getAreaid() {
-        return areaid;
-    }
-
-    public void setAreaid(Integer areaid) {
-        this.areaid = areaid;
-    }
-
-    public Integer getCid() {
-        return cid;
-    }
-
-    public void setCid(Integer cid) {
-        this.cid = cid;
-    }
 }

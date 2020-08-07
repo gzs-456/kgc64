@@ -10,7 +10,17 @@ public class Invitation_area {
     private String areaAdmin;//版主或管理者
     private Integer clicknum;//专区点击数,默认为0
     private Integer introduceChildId;//专区子版块外键
+    private Integer invitationId;//帖子外键
     private Invitation_areaChild areaChild;//专区子版块对象
+    private Invitation_invitation invitation;//帖子对象
+
+    public Invitation_invitation getInvitation() {
+        return invitation;
+    }
+
+    public void setInvitation(Invitation_invitation invitation) {
+        this.invitation = invitation;
+    }
 
     public Integer getId() {
         return id;
@@ -67,4 +77,13 @@ public class Invitation_area {
     public void setIntroduceChildId(Integer introduceChildId) {
         this.introduceChildId = introduceChildId;
     }
+
+    public Integer getInvitationId() {
+        return invitationId;
+    }
+
+    public void setInvitationId(Integer invitationId) {
+        this.invitationId = invitationId;
+    }
+
 }

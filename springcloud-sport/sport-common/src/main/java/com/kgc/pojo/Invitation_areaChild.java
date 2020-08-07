@@ -9,6 +9,7 @@ public class Invitation_areaChild {
     private String introduce;//专区子版块介绍
     private String areaAdmin;//专区子版块版主或管理者
     private Integer clicknum;//专区点击数,默认为0
+    private Integer invitationId;//帖子外键
 
     public Integer getId() {
         return id;
@@ -48,5 +49,13 @@ public class Invitation_areaChild {
 
     public void setAreaname(String areaname) {
         this.areaname = areaname;
+    }
+
+    public Integer getInvitationId() {
+        return invitationId;
+    }
+
+    public void setInvitationId(Integer invitationId) {
+        this.invitationId = invitationId;
     }
 }

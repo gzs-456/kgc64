@@ -12,12 +12,9 @@ import java.util.Map;
  */
 @Mapper
 public interface Tb_commentMapper {
-    //分页，根据帖子编号查询所有
+    //分页，帖子表，评论表两表连接查询,根据帖子编号查询所有评论
     public List<Invitation_comment>getTb_commentPage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
-
-    //根据帖子编号查询某一个帖子评论信息
-    public Invitation_comment getTb_commentById(Integer id);
 
     //添加新的帖子评论
     public int addTb_comment(Invitation_comment comment);

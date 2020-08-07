@@ -16,12 +16,6 @@ public interface Tb_invitationMapper {
     public List<Invitation_invitation>getTb_invitationPage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
 
-    //帖子表，专区表两表连接查询
-    public List<Invitation_invitation> getTb_invitationAndTb_area();
-
-    //帖子表，评论表两表连接查询
-    public List<Invitation_invitation> getTb_invitationAndTb_comment();
-
     //根据帖子编号查询某一个帖子信息
     public Invitation_invitation getTb_invitationById(Integer id);
 

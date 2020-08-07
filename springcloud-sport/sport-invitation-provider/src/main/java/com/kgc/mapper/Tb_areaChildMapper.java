@@ -15,9 +15,6 @@ public interface Tb_areaChildMapper {
     public List<Invitation_areaChild> getTb_areaChildPage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
 
-    //查询所有的专区子版块信息
-    public List<Invitation_areaChild> getAllTb_areaChild();
-
     //根据专区子版块编号查询某一个专区子版块介绍信息
     public Invitation_areaChild getTb_areaById(Integer id);
 

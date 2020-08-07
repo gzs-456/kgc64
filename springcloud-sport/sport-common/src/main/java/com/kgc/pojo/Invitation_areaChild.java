@@ -1,18 +1,55 @@
 package com.kgc.pojo;
 
+import java.io.Serializable;
+
 /**
  * 专区子版块表实体类
  */
-public class Invitation_areaChild {
-    private Integer id;//专区子版块编号
-    private String areaname;//专区子版块名称
-    private String introduce;//专区子版块介绍
-    private String areaAdmin;//专区子版块版主或管理者
-    private Integer clicknum;//专区点击数,默认为0
-    private Integer invitationId;//帖子外键
-    private Integer areaId;//专区外键
-    private Invitation_invitation invitation;//帖子对象
-    private Invitation_area area;//专区对象
+public class Invitation_areaChild implements Serializable {
+    //专区子版块编号
+    private Integer id;
+    //专区子版块名称
+    private String areaname;
+    //专区子版块介绍
+    private String introduce;
+    //专区子版块版主或管理者
+    private String areaAdmin;
+    //专区点击数,默认为0
+    private Integer clicknum;
+    //帖子外键
+    private Integer invitationId;
+    //专区外键
+    private Integer areaId;
+    //帖子对象
+    private Invitation_invitation invitation;
+    //专区对象
+    private Invitation_area area;
+
+    //不带参构造方法
+    public Invitation_areaChild(){}
+    /**
+     * 带参构造方法
+     * @param id 专区子版块编号
+     * @param areaname 专区子版块名称
+     * @param introduce 专区子版块介绍
+     * @param areaAdmin 专区子版块版主或管理者
+     * @param clicknum 专区点击数,默认为0
+     * @param invitationId 帖子外键
+     * @param areaId 专区外键
+     * @param invitation 帖子对象
+     * @param area 专区对象
+     */
+    public Invitation_areaChild(Integer id, String areaname, String introduce, String areaAdmin, Integer clicknum, Integer invitationId, Integer areaId, Invitation_invitation invitation, Invitation_area area) {
+        this.id = id;
+        this.areaname = areaname;
+        this.introduce = introduce;
+        this.areaAdmin = areaAdmin;
+        this.clicknum = clicknum;
+        this.invitationId = invitationId;
+        this.areaId = areaId;
+        this.invitation = invitation;
+        this.area = area;
+    }
 
     public Integer getId() {
         return id;

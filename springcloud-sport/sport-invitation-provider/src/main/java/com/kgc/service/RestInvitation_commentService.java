@@ -13,6 +13,8 @@ import java.util.Map;
 public class RestInvitation_commentService {
     @Autowired
     private Tb_commentMapper tb_commentMapper;
+
+    //分页，帖子表，评论表两表连接查询,根据帖子编号查询所有评论
     @RequestMapping("/getTb_commentPage")
     public PageUtil getTb_commentPage(@RequestParam Map<String,Object> map){
         PageUtil page=new PageUtil();

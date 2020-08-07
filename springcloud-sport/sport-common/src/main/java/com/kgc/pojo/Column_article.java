@@ -1,6 +1,8 @@
 package com.kgc.pojo;
 
-public class Column_article {
+import java.io.Serializable;
+
+public class Column_article implements Serializable {
     private String id;
     private String columnid;
     private String userid;

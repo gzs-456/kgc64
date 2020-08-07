@@ -2,7 +2,7 @@ server:
   port: 9001
 spring:
   application:
-    name: invitation_provider
+    name: sport-invitation-provider
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_invitation

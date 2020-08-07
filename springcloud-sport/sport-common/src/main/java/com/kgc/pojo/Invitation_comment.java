@@ -1,17 +1,51 @@
 package com.kgc.pojo;
 
+import java.io.Serializable;
+
 /**
  * 帖子评论表实体类
  */
-public class Invitation_comment {
-    private Integer id;//评论编号
-    private String cname;//评论人名称
-    private String content;//评论内容
-    private String ctime;//评论时间
-    private String cpicture;//评论人头像地址
-    private Integer cnum;//评论点赞数
-    private Integer invitationId;//帖子外键
-    private Invitation_invitation invitation;//帖子对象
+public class Invitation_comment implements Serializable {
+    //评论编号
+    private Integer id;
+    //评论人名称
+    private String cname;
+    //评论内容
+    private String content;
+    //评论时间
+    private String ctime;
+    //评论人头像地址
+    private String cpicture;
+    //评论点赞数
+    private Integer cnum;
+    //帖子外键
+    private Integer invitationId;
+    //帖子对象
+    private Invitation_invitation invitation;
+
+    //不带参构造方法
+    public Invitation_comment(){}
+    /**
+     * 带参构造方法
+     * @param id 评论编号
+     * @param cname 评论人名称
+     * @param content 评论内容
+     * @param ctime 评论时间
+     * @param cpicture 评论人头像地址
+     * @param cnum 评论点赞数
+     * @param invitationId 帖子外键
+     * @param invitation 帖子对象
+     */
+    public Invitation_comment(Integer id, String cname, String content, String ctime, String cpicture, Integer cnum, Integer invitationId, Invitation_invitation invitation) {
+        this.id = id;
+        this.cname = cname;
+        this.content = content;
+        this.ctime = ctime;
+        this.cpicture = cpicture;
+        this.cnum = cnum;
+        this.invitationId = invitationId;
+        this.invitation = invitation;
+    }
 
     public Invitation_invitation getInvitation() {
         return invitation;

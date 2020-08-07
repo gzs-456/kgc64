@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-public class Invitation_areaService {
+public class RestInvitation_areaService {
     @Autowired
     private Tb_areaMapper tb_areaMapper;
 

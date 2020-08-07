@@ -14,7 +14,8 @@ import java.util.Map;
 public class RestInvitation_invitationService {
     @Autowired
     private Tb_invitationMapper tb_invitationMapper;
-
+    //分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
+    //可以根据点赞数，推荐数，浏览数，发布时间 降序排列
     @RequestMapping("/getTb_invitationPage")
     public PageUtil getTb_invitationPage(@RequestParam Map<String, Object> map){
         PageUtil page=new PageUtil();

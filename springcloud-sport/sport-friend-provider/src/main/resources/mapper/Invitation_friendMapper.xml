@@ -4,13 +4,37 @@
     <!--分页，根据用户编号查询所有好友-->
     <select id="getAllInvitation_friend" resultType="com.kgc.pojo.Invitation_friend">
         SELECT friendid FROM tb_friend WHERE 1=1
-        <if test="userid!=null and userid!=''"> and userid like concat('%',#{userid},'%')</if>
+        <if test="userid!=null and userid!=''"> and userid=#{userid}</if>
+        limit ${pageIndex},${pageSize}
     </select>
-    <select id="getCount" resultType="com.kgc.pojo.Invitation_friend">
+    <select id="getCount" resultType="int">
         SELECT COUNT(*) FROM tb_friend where 1=1
-        <if test="userid!=null and userid!=''"> and userid like concat('%',#{userid},'%')</if>
+        <if test="userid!=null and userid!=''"> and userid=#{userid}</if>
     </select>
 
     <!--根据用户编号和好友编号更新好友备注信息-->
+    <update id="updateBz" parameterType="com.kgc.pojo.Invitation_friend">
+        update tb_friend set bz=#{bz}
+        <where>
+            <if test="userid!=null and userid!=''">and userid=#{userid}</if>
+            <if test="friendid!=null and friendid!=''">and friendid=#{friendid}</if>
+        </where>
+    </update>
+    <!--根据用户编号和好友编号更新是否相互关注-->
+    <update id="updateislike" parameterType="com.kgc.pojo.Invitation_friend">
+        update tb_friend SET islike=#{islike}
+        <where>
+            <if test="userid!=null and userid!=''">and userid=#{userid}</if>
+            <if test="friendid!=null and friendid!=''">and friendid=#{friendid}</if>
+        </where>
+    </update>
 
+    <!--根据用户编号和好友编号删除好友-->
+    <delete id="delete" parameterType="com.kgc.pojo.Invitation_friend">
+        DELETE FROM tb_friend
+        <where>
+            <if test="userid!=null and userid!=''">and userid=#{userid}</if>
+            <if test="friendid!=null and friendid!=''">and friendid=#{friendid}</if>
+        </where>
+    </delete>
 </mapper> 

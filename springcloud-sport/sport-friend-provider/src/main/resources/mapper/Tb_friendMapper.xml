@@ -3,12 +3,12 @@
 <mapper namespace="com.kgc.mapper.Tb_friendMapper">
     <select id="getTb_friendPage" resultType="com.kgc.pojo.Invitation_friend">
       SELECT friendid,islike FROM tb_friend WHERE  userid=#{userid}
-      limit ${index},${size}
+      limit ${pageIndex},${pageSize}
     </select>
 
     <select id="getCount" resultType="int">
         SELECT COUNT(*) FROM tb_friend
-        WHERE friendid=#{friendid} AND userid=#{userid}
+        WHERE userid=#{userid}
     </select>
 
     <insert id="addTb_friend" parameterType="com.kgc.pojo.Invitation_friend">

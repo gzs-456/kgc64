@@ -16,18 +16,12 @@ public class RestChatecordService {
     private Tb_chatrecordMapper tb_chatrecordMapper;
 
     @RequestMapping("/getChatecordPage")
-    public PageUtil<Invitation_chatrecord> getTb_chatrecordPage(@RequestParam Map<String, Object> param){
+    public PageUtil<Invitation_chatrecord> getTb_chatrecordPage(Integer putid,Integer gainid,Integer pageIndex,Integer pageSize){
         PageUtil page=new PageUtil();
-        //当前页面
-        Integer index=Integer.parseInt(param.get("index").toString());
-        System.out.println(index);
-        page.setPageIndex(index);
-        //每页条数
-        Integer size=Integer.parseInt(param.get("size").toString());
-        page.setPageSize(size);
         //调用mapper方法
-        List<Invitation_chatrecord> list=tb_chatrecordMapper.getTb_chatrecordPage(param);
-        int count=tb_chatrecordMapper.getCount(param);
+        List<Invitation_chatrecord> list=tb_chatrecordMapper.getTb_chatrecordPage(putid,gainid,(pageIndex-1)*pageSize,pageSize);
+        int count=tb_chatrecordMapper.getCount(putid,gainid);
+        System.out.println(count);
         page.setList(list);
         page.setTotalCount(count);
         return page;

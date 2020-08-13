@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 public class RestFriendService {
@@ -16,18 +15,11 @@ public class RestFriendService {
     private Tb_friendMapper tb_friendMapper;
 
     @RequestMapping("/getFriendPage")
-    public PageUtil<Invitation_friend> getTb_friendPage(@RequestParam Map<String, Object> param){
+    public PageUtil<Invitation_friend> getTb_friendPage(@RequestParam Integer userid,@RequestParam Integer pageIndex,@RequestParam Integer pageSize){
         PageUtil page=new PageUtil();
-        //当前页面
-        System.out.println(param.get("index").toString());
-        Integer index=Integer.parseInt(param.get("index").toString());
-        page.setPageIndex(index);
-        //每页条数
-        Integer size=Integer.parseInt(param.get("size").toString());
-        page.setPageSize(size);
         //调用mapper方法
-        List<Invitation_friend> list=tb_friendMapper.getTb_friendPage(param);
-        int count=tb_friendMapper.getCount(param);
+        List<Invitation_friend> list=tb_friendMapper.getTb_friendPage(userid,pageIndex,pageSize);
+        int count=tb_friendMapper.getCount(userid);
         page.setList(list);
         page.setTotalCount(count);
         return page;

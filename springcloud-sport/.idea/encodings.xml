@@ -12,5 +12,6 @@
     <file url="file://$PROJECT_DIR$/sport-invitation-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sport-user-comsumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sport-user-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sport_column_provider" charset="UTF-8" />
   </component>
 </project>

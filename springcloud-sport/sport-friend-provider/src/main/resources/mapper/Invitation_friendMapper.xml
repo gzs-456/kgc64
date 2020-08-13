@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Invitation_friendMapper">
+    <!--分页，根据用户编号查询所有好友-->
+    <select id="getAllInvitation_friend" resultType="com.kgc.pojo.Invitation_friend">
+        SELECT friendid FROM tb_friend WHERE 1=1
+        <if test="userid!=null and userid!=''"> and userid like concat('%',#{userid},'%')</if>
+    </select>
+    <select id="getCount" resultType="com.kgc.pojo.Invitation_friend">
+        SELECT COUNT(*) FROM tb_friend where 1=1
+        <if test="userid!=null and userid!=''"> and userid like concat('%',#{userid},'%')</if>
+    </select>
+
+    <!--根据用户编号和好友编号更新好友备注信息-->
+
+</mapper> 

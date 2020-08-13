@@ -22,11 +22,11 @@ public class Invitation_areaChildController {
 
 
     //分页,根据专区子版块名称查询所有
-    @RequestMapping("/getTb_areaChildPage")
+    @RequestMapping("/getTb_areaChildPage/{pageIndex}/{pageSize}")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "areaname", value = "专区子版块名称", required = false, dataType = "String"),
-            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer")
+            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer",paramType="path"),
+            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer",paramType="path")
     })
     @ApiOperation(value = "分页",notes = "根据专区子版块名称查询所有,页码默认为1，每页条数默认为2")
     public PageUtil<Invitation_areaChild> getTb_areaChildPage(String areaname,
@@ -37,28 +37,28 @@ public class Invitation_areaChildController {
 
 
     //帖子表，专区子版块表两表连接查询,根据帖子编号查询所有专区子版块
-    @RequestMapping("/getAreaChildByinvitationId")
+    @RequestMapping("/getAreaChildByinvitationId/{invitationId}")
     @ApiOperation(value = "帖子表，专区子版块表两表连接查询",notes = "根据帖子编号查询所有专区子版块")
-    @ApiImplicitParam(name = "invitationId", value = "帖子编号", required = true, dataType = "Integer")
-    public List<Invitation_areaChild> getAreaChildByinvitationId(Integer invitationId){
+    @ApiImplicitParam(name = "invitationId", value = "帖子编号", required = true, dataType = "Integer",paramType="path")
+    public List<Invitation_areaChild> getAreaChildByinvitationId(@PathVariable("invitationId") Integer invitationId){
         return areaChildService.getByinvitationId(invitationId);
     }
 
 
     //专区表，专区子版块表两表连接查询,根据专区编号查询所有专区子版块
-    @RequestMapping("/getAreaChildByareaId")
+    @RequestMapping("/getAreaChildByareaId/{areaId}")
     @ApiOperation(value = "专区表，专区子版块表两表连接查询",notes = "根据专区编号查询所有专区子版块")
-    @ApiImplicitParam(name = "areaId", value = "专区编号", required = true, dataType = "Integer")
-    public List<Invitation_areaChild> getAreaChildByareaId(Integer areaId){
+    @ApiImplicitParam(name = "areaId", value = "专区编号", required = true, dataType = "Integer",paramType="path")
+    public List<Invitation_areaChild> getAreaChildByareaId(@PathVariable("areaId") Integer areaId){
         return areaChildService.getByareaId(areaId);
     }
 
 
     //根据专区子版块编号查询某一个专区子版块介绍信息
-    @RequestMapping("/getTb_areaChildById")
+    @RequestMapping("/getTb_areaChildById/{id}")
     @ApiOperation(value = "查询某一个专区子版块介绍信息",notes = "根据专区子版块编号查询某一个专区子版块介绍信息")
-    @ApiImplicitParam(name = "id", value = "专区子版块编号", required = true, dataType = "Integer")
-    public Invitation_areaChild getTb_areaChildById(Integer id){
+    @ApiImplicitParam(name = "id", value = "专区子版块编号", required = true, dataType = "Integer",paramType="path")
+    public Invitation_areaChild getTb_areaChildById(@PathVariable("id") Integer id){
         return areaChildService.getTb_areaById(id);
     }
 
@@ -82,19 +82,19 @@ public class Invitation_areaChildController {
 
 
     //根据专区子版块ID更新专区子版块的点击数
-    @RequestMapping("/updateAreaChildClicknum")
+    @RequestMapping("/updateAreaChildClicknum/{id}")
     @ApiOperation(value = "更新专区子版块的点击数",notes = "根据专区子版块ID更新专区子版块的点击数")
-    @ApiImplicitParam(name = "id", value = "专区子版块编号", required = true, dataType = "Integer")
-    public int updateClicknum(Integer id){
+    @ApiImplicitParam(name = "id", value = "专区子版块编号", required = true, dataType = "Integer",paramType="path")
+    public int updateClicknum(@PathVariable("id") Integer id){
         return areaChildService.updateClicknum(id);
     }
 
 
     //根据ID删除某个专区子版块
-    @RequestMapping("/deleteTb_areaChild")
+    @RequestMapping("/deleteTb_areaChild/{id}")
     @ApiOperation(value = "删除",notes = "根据ID删除某个专区子版块")
-    @ApiImplicitParam(name = "id", value = "专区子版块编号", required = true, dataType = "Integer")
-    public int deleteTb_areaChild(Integer id){
+    @ApiImplicitParam(name = "id", value = "专区子版块编号", required = true, dataType = "Integer",paramType="path")
+    public int deleteTb_areaChild(@PathVariable("id") Integer id){
         return areaChildService.deleteTb_areaChild(id);
     }
 }

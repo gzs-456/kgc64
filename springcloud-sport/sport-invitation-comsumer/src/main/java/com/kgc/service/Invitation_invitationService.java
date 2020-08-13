@@ -7,7 +7,7 @@ import com.kgc.util.PageUtil;
 public interface Invitation_invitationService {
     //分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
     //可以根据点赞数，推荐数，浏览数，发布时间 降序排列
-    public PageUtil<Invitation_invitation> getTb_invitationPage(String title,String iname,String ftime,Integer snum,Integer rnum,Integer seenum,Integer pageIndex,Integer pageSize);
+    public PageUtil<Invitation_invitation> getTb_invitationPage(Invitation_invitation  invitation,Integer pageIndex,Integer pageSize);
 
     //根据帖子编号查询某一个帖子信息
     public Invitation_invitation getTb_invitationById(Integer id);

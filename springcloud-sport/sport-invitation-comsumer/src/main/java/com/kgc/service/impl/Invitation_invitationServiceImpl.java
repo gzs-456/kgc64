@@ -17,15 +17,10 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
     //分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
     //可以根据点赞数，推荐数，浏览数，发布时间 降序排列
     @Override
-    public PageUtil<Invitation_invitation> getTb_invitationPage(String title, String iname, String ftime, Integer snum, Integer rnum, Integer seenum, Integer pageIndex, Integer pageSize) {
+    public PageUtil<Invitation_invitation> getTb_invitationPage(Invitation_invitation  invitation, Integer pageIndex, Integer pageSize) {
         //封装成一个map对象
         Map<String,Object>map=new HashMap<>();
-        map.put("title",title);
-        map.put("iname",iname);
-        map.put("ftime",ftime);
-        map.put("snum",snum);
-        map.put("rnum",rnum);
-        map.put("seenum",seenum);
+        map.put("invitation",invitation);
         map.put("pageIndex",pageIndex);
         map.put("pageSize",pageSize);
         return invitationClient.getTb_invitationPage(map);

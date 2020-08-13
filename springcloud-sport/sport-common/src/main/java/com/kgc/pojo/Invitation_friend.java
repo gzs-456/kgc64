@@ -17,6 +17,7 @@ public class Invitation_friend implements Serializable {
     //是否相互关注，0 单向关注，1 双向关注
     private String islike;
 
+
     //不带参的构造方法
     public Invitation_friend(){}
     /**

@@ -22,12 +22,12 @@ public class Invitation_areaController {
 
 
     //分页,根据专区名称查询所有
-    @RequestMapping("/getTb_areaPage")
+    @RequestMapping("/getTb_areaPage/{pageIndex}/{pageSize}")
     @ApiOperation(value = "分页",notes = "根据专区名称查询所有，页码默认为1，每页条数默认为2")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "areaname", value = "专区名称", required = false, dataType = "String"),
-            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer")
+            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer",paramType="path"),
+            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer",paramType="path")
     })
     public PageUtil<Invitation_area> getTb_areaPage(String areaname,
             @RequestParam(value = "pageIndex",required =false, defaultValue = "1") Integer pageIndex,
@@ -37,19 +37,19 @@ public class Invitation_areaController {
 
 
     //帖子表，专区表两表连接查询,根据帖子编号查询所有专区
-    @RequestMapping("/getAreaByinvitationId")
+    @RequestMapping("/getAreaByinvitationId/{invitationId}")
     @ApiOperation(value = "帖子表，专区表两表连接查询",notes = "根据帖子编号查询所有专区")
-    @ApiImplicitParam(name = "invitationId", value = "帖子编号", required = true, dataType = "Integer")
-    public List<Invitation_area> getByinvitationId(Integer invitationId) {
+    @ApiImplicitParam(name = "invitationId", value = "帖子编号", required = true, dataType = "Integer",paramType="path")
+    public List<Invitation_area> getByinvitationId(@PathVariable("invitationId") Integer invitationId) {
         return areaService.getByinvitationId(invitationId);
     }
 
 
     //根据专区编号查询某一个专区介绍信息
-    @RequestMapping("/getTb_areaById")
+    @RequestMapping("/getTb_areaById/{id}")
     @ApiOperation(value = "查询某一个专区介绍信息",notes = "根据专区编号查询某一个专区介绍信息")
-    @ApiImplicitParam(name = "id", value = "专区编号", required = true, dataType = "Integer")
-    public Invitation_area getTb_areaById(Integer id){
+    @ApiImplicitParam(name = "id", value = "专区编号", required = true, dataType = "Integer",paramType="path")
+    public Invitation_area getTb_areaById(@PathVariable("id") Integer id){
         return areaService.getTb_areaById(id);
     }
 
@@ -73,19 +73,19 @@ public class Invitation_areaController {
 
 
     //根据专区ID更新专区的点击数
-    @RequestMapping("/updateAreaClicknum")
+    @RequestMapping("/updateAreaClicknum/{id}")
     @ApiOperation(value = "更新专区的点击数",notes = "根据专区ID更新专区的点击数")
-    @ApiImplicitParam(name = "id", value = "专区编号", required = true, dataType = "Integer")
-    public int updateClicknum(Integer id){
+    @ApiImplicitParam(name = "id", value = "专区编号", required = true, dataType = "Integer",paramType="path")
+    public int updateClicknum(@PathVariable("id") Integer id){
         return areaService.updateClicknum(id);
     }
 
 
     //根据ID删除某个专区
-    @RequestMapping("/deleteTb_area")
+    @RequestMapping("/deleteTb_area/{id}")
     @ApiOperation(value = "删除",notes = "根据ID删除某个专区")
-    @ApiImplicitParam(name = "id", value = "专区编号", required = true, dataType = "Integer")
-    public int deleteTb_area(Integer id){
+    @ApiImplicitParam(name = "id", value = "专区编号", required = true, dataType = "Integer",paramType="path")
+    public int deleteTb_area(@PathVariable("id") Integer id){
         return areaService.deleteTb_area(id);
     }
 }

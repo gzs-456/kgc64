@@ -22,31 +22,26 @@ public class Invitation_invitationController {
         分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
         可以根据点赞数，推荐数，浏览数，发布时间 降序排列
      */
-    @RequestMapping("/getTb_invitationPage")
+    @RequestMapping("/getTb_invitationPage/{pageIndex}/{pageSize}")
     @ApiOperation(value = "分页",notes = "模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间\n" +
             "        可以根据点赞数，推荐数，浏览数，发布时间 降序排列")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "title", value = "帖子标题", required = false, dataType = "String"),
-            @ApiImplicitParam(name = "iname", value = "发布者昵称", required = false, dataType = "String"),
-            @ApiImplicitParam(name = "ftime", value = "发布时间", required = false, dataType = "String"),
-            @ApiImplicitParam(name = "snum", value = "点赞数", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "rnum", value = "推荐数", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "seenum", value = "浏览数", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer")
+            @ApiImplicitParam(name = "invitation", value = "帖子对象", required = false, dataType = "Invitation_invitation"),
+            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer",paramType="path"),
+            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer",paramType="path")
     })
-    public PageUtil<Invitation_invitation> getTb_invitationPage(String title, String iname, String ftime, Integer snum, Integer rnum, Integer seenum,
+    public PageUtil<Invitation_invitation> getTb_invitationPage(@RequestBody Invitation_invitation  invitation,
            @RequestParam(value = "pageIndex",required =false, defaultValue = "1") Integer pageIndex,
            @RequestParam(value = "pageSize",required =false, defaultValue = "2") Integer pageSize) {
-        return invitationService.getTb_invitationPage(title,iname,ftime,snum,rnum,seenum,pageIndex,pageSize);
+        return invitationService.getTb_invitationPage(invitation,pageIndex,pageSize);
     }
 
 
     //根据帖子编号查询某一个帖子信息
-    @RequestMapping("/getTb_invitationById")
+    @RequestMapping("/getTb_invitationById/{id}")
     @ApiOperation(value = "查询某一个帖子信息",notes = "根据帖子编号查询某一个帖子信息")
-    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer")
-    public Invitation_invitation getTb_invitationById(Integer id){
+    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
+    public Invitation_invitation getTb_invitationById(@PathVariable("id") Integer id){
         return invitationService.getTb_invitationById(id);
     }
 
@@ -70,37 +65,37 @@ public class Invitation_invitationController {
 
 
     //根据帖子ID更新帖子点赞数
-    @RequestMapping("/updateSnum")
+    @RequestMapping("/updateSnum/{id}")
     @ApiOperation(value = "更新帖子点赞数",notes = "根据帖子ID更新帖子点赞数")
-    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer")
-    public int updateSnum(Integer id){
+    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
+    public int updateSnum(@PathVariable("id") Integer id){
         return invitationService.updateSnum(id);
     }
 
 
     //根据帖子ID更新帖子推荐数
-    @RequestMapping("/updateRnum")
+    @RequestMapping("/updateRnum/{id}")
     @ApiOperation(value = "更新帖子推荐数",notes = "根据帖子ID更新帖子推荐数")
-    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer")
-    public int updateRnum(Integer id){
+    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
+    public int updateRnum(@PathVariable("id") Integer id){
         return invitationService.updateRnum(id);
     }
 
 
     //根据帖子ID更新帖子浏览数
-    @RequestMapping("/updateSeenum")
+    @RequestMapping("/updateSeenum/{id}")
     @ApiOperation(value = "更新帖子浏览数",notes = "根据帖子ID更新帖子浏览数")
-    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer")
-    public int updateSeenum(Integer id){
+    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
+    public int updateSeenum(@PathVariable("id") Integer id){
         return invitationService.updateSeenum(id);
     }
 
 
     //据ID删除某个帖子
-    @RequestMapping("/deleteTb_invitation")
+    @RequestMapping("/deleteTb_invitation/{id}")
     @ApiOperation(value = "删除",notes = "据ID删除某个帖子")
-    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer")
-    public int deleteTb_invitation(Integer id){
+    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
+    public int deleteTb_invitation(@PathVariable("id") Integer id){
         return invitationService.deleteTb_invitation(id);
     }
 }

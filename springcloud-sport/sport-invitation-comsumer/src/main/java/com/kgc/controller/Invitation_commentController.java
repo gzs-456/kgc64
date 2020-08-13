@@ -21,13 +21,13 @@ public class Invitation_commentController {
 
     //分页，帖子表，评论表两表连接查询,根据帖子编号查询所有评论
     @ApiOperation(value = "分页",notes = "帖子表，评论表两表连接查询,根据帖子编号查询所有评论")
-    @RequestMapping("/getTb_commentPage")
+    @RequestMapping("/getTb_commentPage/{invitationId}/{pageIndex}/{pageSize}")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "invitationId", value = "帖子编号", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer")
+            @ApiImplicitParam(name = "invitationId", value = "帖子编号", required = false, dataType = "Integer",paramType="path"),
+            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer",paramType="path"),
+            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer",paramType="path")
     })
-    public PageUtil<Invitation_comment> getTb_commentPage(Integer invitationId,
+    public PageUtil<Invitation_comment> getTb_commentPage(@PathVariable("invitationId") Integer invitationId,
            @RequestParam(value = "pageIndex",required =false, defaultValue = "1") Integer pageIndex,
            @RequestParam(value = "pageSize",required =false, defaultValue = "2") Integer pageSize) {
         return commentService.getTb_commentPage(invitationId,pageIndex,pageSize);
@@ -53,19 +53,19 @@ public class Invitation_commentController {
 
 
     //根据帖子ID更新帖子评论的点赞数
-    @RequestMapping("/updateCnum")
+    @RequestMapping("/updateCnum/{id}")
     @ApiOperation(value = "更新帖子评论的点赞数",notes = "根据帖子ID更新帖子评论的点赞数")
-    @ApiImplicitParam(name = "id", value = "评论编号", required = true, dataType = "Integer")
-    public int updateCnum(Integer id){
+    @ApiImplicitParam(name = "id", value = "评论编号", required = true, dataType = "Integer",paramType="path")
+    public int updateCnum(@PathVariable("id") Integer id){
         return commentService.updateCnum(id);
     }
 
 
     //根据ID删除某个帖子评论
-    @RequestMapping("/deleteTb_comment")
+    @RequestMapping("/deleteTb_comment/{id}")
     @ApiOperation(value = "删除",notes = "根据ID删除某个帖子评论")
-    @ApiImplicitParam(name = "id", value = "评论编号", required = true, dataType = "Integer")
-    public int deleteTb_comment(Integer id){
+    @ApiImplicitParam(name = "id", value = "评论编号", required = true, dataType = "Integer",paramType="path")
+    public int deleteTb_comment(@PathVariable("id") Integer id){
         return commentService.deleteTb_comment(id);
     }
 }

@@ -17,6 +17,7 @@ public class Invitation_chatrecord implements Serializable {
     //聊天内容
     private String content;
 
+
     //不带参构造方法
     public Invitation_chatrecord(){}
     /**

@@ -1,5 +1,5 @@
 server:
-  port: 9002
+  port: 9091
 spring:
   application:
     name: sport-invitation-comsumer

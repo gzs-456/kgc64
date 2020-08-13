@@ -3,6 +3,7 @@ package com.kgc.mapper;
 
 import com.kgc.pojo.Invitation_friend;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -13,8 +14,8 @@ import java.util.Map;
 @Mapper
 public interface Tb_friendMapper {
     //分页，根据用户编号查询所有的好友
-    public List<Invitation_friend> getTb_friendPage(Map<String, Object> map);
-    public int getCount(Map<String, Object> map);
+    public List<Invitation_friend> getTb_friendPage(@Param("userid") Integer userid,@Param("pageIndex") Integer pageIndex, @Param("pageSize") Integer pageSize);
+    public int getCount(@Param("userid") Integer userid);
 
     //根据好友编号查询好友信息
     public Invitation_friend getTb_friendById(String userid);

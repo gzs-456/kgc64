@@ -22,7 +22,7 @@ public class Invitation_chatrecordServiceImpl implements Invitation_chatrecordSe
         Map<String,Object> map=new HashMap<>();
         map.put("putid",putid);
         map.put("gainid",gainid);
-        map.put("pageIndex",pageIndex);
+        map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
         return chatrecordClient.getAllInvitation_chatrecord(map);
     }

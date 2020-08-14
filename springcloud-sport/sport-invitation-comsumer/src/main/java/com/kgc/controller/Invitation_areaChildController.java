@@ -20,7 +20,6 @@ public class Invitation_areaChildController {
     @Autowired
     private Invitation_areaChildService areaChildService;
 
-
     //分页,根据专区子版块名称查询所有
     @RequestMapping("/getTb_areaChildPage/{pageIndex}/{pageSize}")
     @ApiImplicitParams({

@@ -20,7 +20,7 @@ public class Invitation_friendServiceImpl implements Invitation_friendService {
         //封装成一个map对象
         Map<String,Object> map=new HashMap<>();
         map.put("userid",userid);
-        map.put("pageIndex",pageIndex);
+        map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
         return friendClient.getAllInvitation_friend(map);
     }

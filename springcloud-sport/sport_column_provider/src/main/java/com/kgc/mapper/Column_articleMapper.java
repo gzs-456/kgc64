@@ -18,7 +18,7 @@ public interface Column_articleMapper {
     //根据标签编号查询所有的文章
     public List<Column_article>getAllarticleByalid(Integer alid);
 
-    //根据专栏编号和文章类型,0：普通 1：专栏查询所有专栏文章
+    //根据专栏编号和文章类型,0：普通 1：专栏查询所有普通或专栏文章
     public List<Column_article>getAllarticleBycolumnid(Integer columnid,String atype);
 
     //根据文章编号，查询该编号文章信息

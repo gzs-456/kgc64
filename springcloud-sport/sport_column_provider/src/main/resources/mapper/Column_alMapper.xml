@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Column_alMapper">
+    <!--分页，查询所有的标签-->
+    <select id="getAllColumn_al" resultType="com.kgc.pojo.Column_al">
+         SELECT * FROM tb_al
+         limit ${pageIndex},${pageSize}
+    </select>
+
+    <!--添加标签-->
+    <insert id="addColumn_al" parameterType="com.kgc.pojo.Column_al">
+        INSERT INTO tb_al VALUES(NULL,#{content})
+    </insert>
+
+    <!--根据标签编号更新标签名-->
+    <update id="updateColumn_al" parameterType="int">
+        UPDATE tb_al SET content=#{content} WHERE id=#{id}
+    </update>
+
+    <!--根据标签编号删除标签-->
+    <delete id="deleteColumn_al" parameterType="int">
+        DELETE FROM tb_al WHERE id=#{id}
+    </delete>
+</mapper> 

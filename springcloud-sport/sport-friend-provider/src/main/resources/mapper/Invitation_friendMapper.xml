@@ -5,10 +5,10 @@
     <select id="getAllInvitation_friend" resultType="com.kgc.pojo.Invitation_friend">
         SELECT friendid FROM tb_friend WHERE 1=1
         <if test="userid!=null and userid!=''"> and userid=#{userid}</if>
-        limit ${pageIndex},${pageSize}
+        LIMIT ${pageIndex},${pageSize}
     </select>
     <select id="getCount" resultType="int">
-        SELECT COUNT(*) FROM tb_friend where 1=1
+        SELECT COUNT(friendid) FROM tb_friend where 1=1
         <if test="userid!=null and userid!=''"> and userid=#{userid}</if>
     </select>
 
@@ -37,4 +37,5 @@
             <if test="friendid!=null and friendid!=''">and friendid=#{friendid}</if>
         </where>
     </delete>
+
 </mapper> 

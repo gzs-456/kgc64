@@ -2,12 +2,12 @@ server:
   port: 8082
 spring:
   application:
-    name: invitation_provider
+    name: sport-friend-provider
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_invitation
     username: root
-    password: okokok
+    password: ok
 eureka:
   client:
     service-url:

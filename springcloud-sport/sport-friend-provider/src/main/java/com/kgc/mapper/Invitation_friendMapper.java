@@ -14,16 +14,16 @@ public interface Invitation_friendMapper {
     public int getCount(Map<String, Object> map);
 
     //根据用户编号和好友编号更新好友备注信息
-    public int updateBz(@Param("userid")Integer userid,
-                        @Param("friendid") Integer friendid,
+    public int updateBz(@Param("userid")String userid,
+                        @Param("friendid") String friendid,
                         @Param("bz") String bz);
 
     //根据用户编号和好友编号更新是否相互关注
-    public int updateislike(@Param("userid")Integer userid,
-                            @Param("friendid") Integer friendid,
+    public int updateislike(@Param("userid")String userid,
+                            @Param("friendid") String friendid,
                             @Param("islike") String islike);
 
     //根据用户编号和好友编号删除好友
-    public int delete(@Param("userid")Integer userid,
-                      @Param("friendid") Integer friendid);
+    public int delete(@Param("userid")String userid,
+                      @Param("friendid") String friendid);
 }

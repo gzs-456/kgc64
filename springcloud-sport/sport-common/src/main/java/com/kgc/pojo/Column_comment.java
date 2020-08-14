@@ -4,7 +4,7 @@ package com.kgc.pojo;
  *评论表实体类
  */
 public class Column_comment {
-    //专栏评论编号
+    //评论编号
     private Integer id;
     //评论人昵称
     private String nickname;
@@ -14,12 +14,14 @@ public class Column_comment {
     private String content;
     //评论日期
     private String publishdate;
-    //文章编号
-    private Integer articleid;
     //评论用户编号
     private String userid;
     //评论级别,如果为0表示文章的顶级评论
     private Integer parentid;
+    //文章类型,0：普通 1：专栏
+    private String atype;
+    //文章编号
+    private Integer articleid;
     //文章表对象
     private Column_article article;
 
@@ -37,7 +39,7 @@ public class Column_comment {
      * @param parentid 评论级别,如果为0表示文章的顶级评论
      * @param article 文章表对象
      */
-    public Column_comment(Integer id, String nickname, String cpicture, String content, String publishdate, Integer articleid, String userid, Integer parentid, Column_article article) {
+    public Column_comment(Integer id, String nickname, String cpicture, String content, String publishdate, Integer articleid, String userid, Integer parentid, Column_article article,String atype) {
         this.id = id;
         this.nickname = nickname;
         this.cpicture = cpicture;
@@ -47,6 +49,7 @@ public class Column_comment {
         this.userid = userid;
         this.parentid = parentid;
         this.article = article;
+        this.atype= atype;
     }
 
     public Integer getId() {
@@ -119,5 +122,13 @@ public class Column_comment {
 
     public void setArticle(Column_article article) {
         this.article = article;
+    }
+
+    public String getAtype() {
+        return atype;
+    }
+
+    public void setAtype(String atype) {
+        this.atype = atype;
     }
 }

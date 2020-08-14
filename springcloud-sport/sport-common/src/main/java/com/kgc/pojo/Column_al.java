@@ -6,23 +6,20 @@ package com.kgc.pojo;
 public class Column_al {
     //文章标签编号
     private Integer id;
-    //文章编号
-    private Integer aid;
-    //文章对象
-    private Column_article article;
+    //标签名
+    private String content;
 
     //无参构造方法
     public Column_al(){}
+
     /**
      * 带参构造方法
      * @param id 文章标签编号
-     * @param aid 文章编号
-     * @param article 文章对象
+     * @param content 标签名
      */
-    public Column_al(Integer id, Integer aid, Column_article article) {
+    public Column_al(Integer id, String content) {
         this.id = id;
-        this.aid = aid;
-        this.article = article;
+        this.content = content;
     }
 
     public Integer getId() {
@@ -33,19 +30,11 @@ public class Column_al {
         this.id = id;
     }
 
-    public Integer getAid() {
-        return aid;
+    public String getContent() {
+        return content;
     }
 
-    public void setAid(Integer aid) {
-        this.aid = aid;
-    }
-
-    public Column_article getArticle() {
-        return article;
-    }
-
-    public void setArticle(Column_article article) {
-        this.article = article;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

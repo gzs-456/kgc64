@@ -34,12 +34,16 @@ public class Column_article implements Serializable {
     private String url;
     //文章类型,0：普通 1：专栏
     private String atype;
-    //专栏编号
+    //专栏外键
     private Integer columnid;
     //用户编号
     private String userid;
     //专栏对象
     private Column_column column;
+    //标签外键
+    private Integer alid;
+    //标签对象
+    private Column_al al;
 
     //无参构造方法
     public Column_article(){}
@@ -60,11 +64,13 @@ public class Column_article implements Serializable {
      * @param state 审核状态,0：未审核  1：已审核
      * @param url URL地址
      * @param atype 文章类型,0：普通 1：专栏
-     * @param columnid 专栏编号
+     * @param columnid 专栏外键
      * @param userid 用户编号
      * @param column 专栏对象
+     * @param alid 标签外键
+     * @param al 标签对象
      */
-    public Column_article(Integer id, String title, String content, String image, String createtime, String updatetime, String ispublic, String istop, Integer visits, Integer thumbup, Integer acomment, String state, String url, String atype, Integer columnid, String userid, Column_column column) {
+    public Column_article(Integer id, String title, String content, String image, String createtime, String updatetime, String ispublic, String istop, Integer visits, Integer thumbup, Integer acomment, String state, String url, String atype, Integer columnid, String userid, Column_column column,Integer alid,Column_al al) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -82,6 +88,8 @@ public class Column_article implements Serializable {
         this.columnid = columnid;
         this.userid = userid;
         this.column = column;
+        this.alid=alid;
+        this.al=al;
     }
 
     public Integer getId() {
@@ -218,5 +226,21 @@ public class Column_article implements Serializable {
 
     public void setColumn(Column_column column) {
         this.column = column;
+    }
+
+    public Integer getAlid() {
+        return alid;
+    }
+
+    public void setAlid(Integer alid) {
+        this.alid = alid;
+    }
+
+    public Column_al getAl() {
+        return al;
+    }
+
+    public void setAl(Column_al al) {
+        this.al = al;
     }
 }

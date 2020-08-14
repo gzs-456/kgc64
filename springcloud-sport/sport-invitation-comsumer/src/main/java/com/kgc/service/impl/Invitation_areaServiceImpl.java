@@ -21,7 +21,7 @@ public class Invitation_areaServiceImpl implements Invitation_areaService {
         //封装成一个map对象
         Map<String,Object> map=new HashMap<>();
         map.put("areaname",areaname);
-        map.put("pageIndex",pageIndex);
+        map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
         return areaClient.getTb_areaPage(map);
     }

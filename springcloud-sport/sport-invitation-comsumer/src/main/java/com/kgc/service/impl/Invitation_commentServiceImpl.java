@@ -20,7 +20,7 @@ public class Invitation_commentServiceImpl implements Invitation_commentService 
         //封装成一个map对象
         Map<String,Object>map=new HashMap<>();
         map.put("invitationId",invitationId);
-        map.put("pageIndex",pageIndex);
+        map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
         return commentClient.getTb_commentPage(map);
     }

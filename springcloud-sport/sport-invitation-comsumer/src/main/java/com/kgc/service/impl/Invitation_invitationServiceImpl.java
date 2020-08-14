@@ -21,7 +21,7 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
         //封装成一个map对象
         Map<String,Object>map=new HashMap<>();
         map.put("invitation",invitation);
-        map.put("pageIndex",pageIndex);
+        map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
         return invitationClient.getTb_invitationPage(map);
     }

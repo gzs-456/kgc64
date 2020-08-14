@@ -16,4 +16,7 @@ public interface Column_alMapper {
     //根据标签编号更新标签名
     public int updateColumn_al(Integer id);
 
+    //根据标签编号删除标签
+    public int deleteColumn_al(Integer id);
+
 }

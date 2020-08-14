@@ -20,7 +20,6 @@ public class Invitation_areaController {
     @Autowired
     private Invitation_areaService areaService;
 
-
     //分页,根据专区名称查询所有
     @RequestMapping("/getTb_areaPage/{pageIndex}/{pageSize}")
     @ApiOperation(value = "分页",notes = "根据专区名称查询所有，页码默认为1，每页条数默认为2")

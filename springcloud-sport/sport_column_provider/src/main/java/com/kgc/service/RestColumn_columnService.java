@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-public class Column_columnService {
+public class RestColumn_columnService {
 
     @Autowired
     private Column_columnMapper columnMapper;

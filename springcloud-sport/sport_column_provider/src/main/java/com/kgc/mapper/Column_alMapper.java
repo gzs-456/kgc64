@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface Column_alMapper {
-    //分页，查询所有的标签
+    //查询所有的标签
     public List<Column_al>getAllColumn_al();
 
     //添加标签

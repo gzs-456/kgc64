@@ -4,12 +4,13 @@ import com.kgc.pojo.Column_channel;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface Column_channelMapper {
     //分页，查询所有的频道
-    public List<Column_channel>getAllColumn_channel();
-    public int getCount();
+    public List<Column_channel>getAllColumn_channel(Map<String, Object> map);
+    public int getCount(Map<String, Object> map);
 
     //根据频道编号查询频道信息
     public Column_channel getChannelById(Integer id);

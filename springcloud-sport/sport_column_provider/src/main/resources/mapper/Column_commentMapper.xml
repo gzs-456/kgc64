@@ -57,6 +57,22 @@
         ON tb_article.id=tb_comment.articleid
         WHERE 1=1
         <if test="articleid!=null and articleid!=-1"> and articleid=#{articleid}</if>
-        <if test="atype!=null and atype!='' "> and atype like concat('%',#{atype},'%')</if>
+        <if test="atype!=null and atype!='' "> and atype=#{atype}</if>
     </select>
+
+    <!--添加评论-->
+    <insert id="addComment" parameterType="com.kgc.pojo.Column_comment">
+        INSERT INTO tb_comment VALUES(NULL,#{nickname},#{cpicture},#{content},now(),#{articleid},#{userid},#{parentid},#{atype})
+    </insert>
+
+    <!--更新评论信息-->
+    <update id="updateComment" parameterType="com.kgc.pojo.Column_comment">
+        UPDATE tb_comment SET nickname=#{nickname},cpicture=#{cpicture},content=#{content},articleid=#{articleid},userid=#{userid},parentid=#{parentid},atype=#{atype}
+        WHERE id=#{id}
+    </update>
+
+    <!--根据评论编号，删除评论信息-->
+    <delete id="deleteComment" parameterType="int">
+        DELETE FROM tb_comment WHERE id=#{id}
+    </delete>
 </mapper> 

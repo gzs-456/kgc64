@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sport-friend-consumer</artifactId>
+    <artifactId>sport_column_consumer</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -52,7 +52,6 @@
             <artifactId>elasticsearch</artifactId>
             <version>6.2.1</version>
         </dependency>
-
     </dependencies>
 
 </project>

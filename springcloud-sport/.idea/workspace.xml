@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e359151a-fc3d-4a02-9c1b-a16beb1958d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_articleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_channelMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/controller/Invitation_chatrecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/controller/Invitation_chatrecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_chatrecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_chatrecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_friendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_friendServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Invitation_chatrecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Invitation_chatrecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/controller/Invitation_areaChildController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/controller/Invitation_areaChildController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/controller/Invitation_areaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/controller/Invitation_areaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_areaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_areaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_commentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_commentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_invitationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_invitationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-user-comsumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-user-comsumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-user-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-user-provider/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_alMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_alMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_articleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_articleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_channelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_channelMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_commentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_commentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_articleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_articleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_commentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_commentMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,29 +70,31 @@
     <session id="-1288585635">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="598" />
-          <entry key="xml" value="102" />
-          <entry key="yml" value="34" />
+          <entry key="java" value="643" />
+          <entry key="xml" value="112" />
+          <entry key="yml" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="598" />
-          <entry key="XML" value="102" />
-          <entry key="YAML" value="34" />
+          <entry key="JAVA" value="643" />
+          <entry key="XML" value="112" />
+          <entry key="YAML" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -112,19 +104,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="12" />
-          <entry key="java" value="7175" />
-          <entry key="txt" value="59" />
-          <entry key="xml" value="3735" />
+          <entry key="dummy" value="16" />
+          <entry key="java" value="7680" />
+          <entry key="txt" value="93" />
+          <entry key="xml" value="4495" />
           <entry key="yml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7175" />
-          <entry key="PLAIN_TEXT" value="71" />
-          <entry key="SQL" value="57" />
-          <entry key="XML" value="3678" />
+          <entry key="JAVA" value="7680" />
+          <entry key="PLAIN_TEXT" value="109" />
+          <entry key="SQL" value="91" />
+          <entry key="XML" value="4404" />
           <entry key="YAML" value="28" />
         </counts>
       </usages-collector>
@@ -132,23 +124,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_channelMapper.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_columnService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="491">
+              <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1508#1509#0" expanded="true" />
+                <element signature="e#1623#1624#0" expanded="true" />
+                <element signature="e#1679#1680#0" expanded="true" />
+                <element signature="e#1800#1801#0" expanded="true" />
+                <element signature="e#1852#1853#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_channelMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -158,9 +149,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="mybatismapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -176,13 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_friend.java" />
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Tb_friendMapper.xml" />
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/service/RestFriendService.java" />
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/service/RestChatecordService.java" />
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Tb_chatrecordMapper.xml" />
-        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_chatrecord.java" />
-        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_column.java" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_channel.java" />
         <option value="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Invitation_friendMapper.xml" />
         <option value="$PROJECT_DIR$/sport-friend-consumer/pom.xml" />
@@ -206,7 +190,6 @@
         <option value="$PROJECT_DIR$/sport_column_provider/pom.xml" />
         <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_al.java" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_channelMapper.java" />
         <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_columnMapper.java" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_comment.java" />
         <option value="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/controller/Invitation_areaChildController.java" />
@@ -215,18 +198,26 @@
         <option value="$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Invitation_chatrecordMapper.xml" />
         <option value="$PROJECT_DIR$/sport-user-provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/sport-user-comsumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_alMapper.java" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_commentMapper.java" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_article.java" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_articleMapper.java" />
         <option value="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_areaServiceImpl.java" />
         <option value="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_commentServiceImpl.java" />
         <option value="$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_invitationServiceImpl.java" />
         <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_friendServiceImpl.java" />
         <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_chatrecordServiceImpl.java" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_articleMapper.xml" />
         <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_channelMapper.xml" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_columnMapper.xml" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_commentMapper.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_commentMapper.xml" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_alMapper.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_alService.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_articleMapper.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_articleMapper.xml" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_articleService.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_channelMapper.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_channelService.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_columnService.java" />
+        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_comment.java" />
       </list>
     </option>
   </component>
@@ -467,6 +458,51 @@
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-invitation-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
               <item name="sport_column_provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -508,6 +544,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kgc" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
+              <item name="sport_column_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
@@ -543,7 +589,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597396932843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597552058533" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/dubbo-flightcity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -653,9 +699,9 @@
       <item itemvalue="Spring Boot.FriendProviderApp" />
       <item itemvalue="Spring Boot.MyConsumerApp" />
       <item itemvalue="Spring Boot.MyProviderApp" />
+      <item itemvalue="Spring Boot.ColumnMyProviderApp" />
       <item itemvalue="Spring Boot.ConsumerApp" />
       <item itemvalue="Spring Boot.FriendConsumerApp" />
-      <item itemvalue="Spring Boot.ColumnMyProviderApp" />
     </list>
     <recent_temporary>
       <list>
@@ -685,7 +731,9 @@
       <workItem from="1597223549716" duration="4046000" />
       <workItem from="1597276505319" duration="7535000" />
       <workItem from="1597286141775" duration="19703000" />
-      <workItem from="1597363828413" duration="26093000" />
+      <workItem from="1597363828413" duration="30412000" />
+      <workItem from="1597469659107" duration="2099000" />
+      <workItem from="1597539314452" duration="5233000" />
     </task>
     <task id="LOCAL-00001" summary="dev-zfc update">
       <created>1596674292510</created>
@@ -785,21 +833,36 @@
       <option name="project" value="LOCAL" />
       <updated>1597384792578</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Merge branch 'master' of https://github.com/gzs-456/kgc64 into dev-zfc&#10;&#10;# Conflicts:&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/java/com/kgc/service/RestFriendService.java&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/resources/mapper/Tb_friendMapper.xml">
+      <created>1597397086692</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1597397086692</updated>
+    </task>
+    <task id="LOCAL-00016" summary="dev-zfc update 2020-08-14 18:00:00">
+      <created>1597399501020</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1597399501020</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129600000" />
+    <option name="totallyTimeSpent" value="141251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22012103" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.39508197" />
@@ -877,97 +940,14 @@
     <MESSAGE value="dev-zfc update 2020-08-11 09:00:00" />
     <MESSAGE value="dev-zfc update 2020-08-13 10:00:00" />
     <MESSAGE value="Merge branch 'master' of https://github.com/gzs-456/kgc64 into dev-zfc&#10;&#10;# Conflicts:&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/java/com/kgc/service/RestFriendService.java&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/resources/mapper/Tb_friendMapper.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/gzs-456/kgc64 into dev-zfc&#10;&#10;# Conflicts:&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/java/com/kgc/service/RestFriendService.java&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/resources/mapper/Tb_friendMapper.xml" />
+    <MESSAGE value="dev-zfc update 2020-08-14 18:00:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="dev-zfc update 2020-08-14 18:00:00" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-507">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-provider/src/main/resources/mapper/Invitation_friendMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/mapper/Invitation_chatrecordMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/client/impl/Invitation_chatrecordClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/client/Invitation_chatrecordClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" column="110" selection-start-line="14" selection-start-column="110" selection-end-line="14" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/Invitation_chatrecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Invitation_chatrecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/client/Invitation_friendClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="16" column="179" selection-start-line="16" selection-start-column="179" selection-end-line="16" selection-end-column="179" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/Invitation_friendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/mapper/Invitation_friendMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="677">
           <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,11 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,13 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1067,9 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,50 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_alMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_columnMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_commentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1177,9 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
           <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,9 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1232,11 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,9 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,17 +1164,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_columnMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_commentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="75" column="45" lean-forward="true" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaChildService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_articleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="128" column="45" selection-start-line="128" selection-start-column="45" selection-end-line="128" selection-end-column="45" />
+        <state relative-caret-position="150">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_channelMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_alMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_alService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_channelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_alMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_articleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="137">
+          <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1276,18 +1266,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_channelMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_channelMapper.xml">
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_columnMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="227">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_articleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="45" column="55" lean-forward="true" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_commentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="41" column="159" selection-start-line="41" selection-start-column="159" selection-end-line="41" selection-end-column="159" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_columnService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

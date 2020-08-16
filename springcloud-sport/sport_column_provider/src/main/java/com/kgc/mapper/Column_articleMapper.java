@@ -12,7 +12,7 @@ public interface Column_articleMapper {
         分页，根据文章标题，发表时间，浏览量，点赞数，评论数，文章类型,0：普通 1：专栏查询，
         并按照发表时间，浏览量，点赞数，评论数降序排列
      */
-    public List<Column_article>getAllColumn_article(Map<String, Object> map);
+    public List<Column_article>getArticlePage(Map<String, Object> map);
     public int getCount(Map<String, Object> map);
 
     //根据标签编号查询所有的文章

@@ -3,7 +3,7 @@
 <mapper namespace="com.kgc.mapper.Column_articleMapper">
    <!-- 分页，根据文章标题，发表时间，浏览量，点赞数，评论数，文章类型,0：普通 1：专栏查询，
     并按照发表时间，浏览量，点赞数，评论数降序排列-->
-    <select id="getAllColumn_article" resultType="">
+    <select id="getArticlePage" resultType="">
         SELECT * FROM tb_article WHERE 1=1
         <if test="title!=null and title!='' "> and title like concat('%',#{title},'%')</if>
         <if test="createtime!=null and createtime!='' "> and createtime like concat('%',#{createtime},'%') order by createtime desc</if>

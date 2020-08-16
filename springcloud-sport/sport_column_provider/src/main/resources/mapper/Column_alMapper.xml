@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.kgc.mapper.Column_alMapper">
-    <!--分页，查询所有的标签-->
+    <!--查询所有的标签-->
     <select id="getAllColumn_al" resultType="com.kgc.pojo.Column_al">
          SELECT * FROM tb_al
-         limit ${pageIndex},${pageSize}
     </select>
 
     <!--添加标签-->

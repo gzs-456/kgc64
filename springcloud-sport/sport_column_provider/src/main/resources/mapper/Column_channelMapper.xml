@@ -22,4 +22,9 @@
       UPDATE tb_channel SET channelname=#{channelname},state=#{state}
       WHERE id=#{id}
     </update>
+
+    <!--根据频道编号删除频道-->
+    <delete id="deleteChannel" parameterType="int">
+      DELETE FROM tb_channel WHERE id=#{id}
+    </delete>
 </mapper> 

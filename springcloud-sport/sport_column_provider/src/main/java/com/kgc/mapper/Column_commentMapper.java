@@ -19,12 +19,12 @@ public interface Column_commentMapper {
     //根据文章编号，文章类型,0：普通 1：专栏来查询普通文章或是专栏文章的评论信息
     public List<Column_comment> getCommentById(Integer articleid,String atype);
 
-    //根据文章类型0：普通 1：专栏，添加评论
-    public int addComment(String atype,Column_comment comment);
+    //添加评论
+    public int addComment(Column_comment comment);
 
-    //根据文章类型0：普通 1：专栏，更新评论信息
-    public int updateComment(String atype,Column_comment comment);
+    //更新评论信息
+    public int updateComment(Column_comment comment);
 
-    //根据文章类型0：普通 1：专栏，和评论编号，删除评论信息
-    public int deleteComment(String atype,Integer id);
+    //根据评论编号，删除评论信息
+    public int deleteComment(Integer id);
 }

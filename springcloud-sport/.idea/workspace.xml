@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e359151a-fc3d-4a02-9c1b-a16beb1958d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-friend-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-friend-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-friend-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-friend-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport-user-comsumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-user-comsumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_articleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_articleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_channelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_channelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/Column_columnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/service/RestColumn_columnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport-common/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,7 +66,7 @@
     <session id="-1288585635">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -84,22 +76,24 @@
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="664" />
-          <entry key="xml" value="121" />
-          <entry key="yml" value="61" />
+          <entry key="java" value="707" />
+          <entry key="xml" value="125" />
+          <entry key="yml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="664" />
-          <entry key="XML" value="121" />
-          <entry key="YAML" value="61" />
+          <entry key="JAVA" value="707" />
+          <entry key="XML" value="125" />
+          <entry key="YAML" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -111,43 +105,24 @@
         <counts>
           <entry key="dummy" value="28" />
           <entry key="java" value="7680" />
-          <entry key="txt" value="95" />
-          <entry key="xml" value="4497" />
-          <entry key="yml" value="112" />
+          <entry key="txt" value="96" />
+          <entry key="xml" value="4499" />
+          <entry key="yml" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="7680" />
-          <entry key="PLAIN_TEXT" value="123" />
+          <entry key="PLAIN_TEXT" value="124" />
           <entry key="SQL" value="91" />
-          <entry key="XML" value="4406" />
-          <entry key="YAML" value="112" />
+          <entry key="XML" value="4408" />
+          <entry key="YAML" value="125" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sport-zuul/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sport-user-comsumer/src/main/java/com/kgc/Controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="13" column="13" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -170,16 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/service/RestInvitation_chatrecordService.java" />
-        <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/Invitation_chatrecordService.java" />
-        <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/controller/Invitation_friendController.java" />
-        <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/Invitation_friendService.java" />
-        <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/client/Invitation_friendClient.java" />
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/service/RestInvitation_friendService.java" />
-        <option value="$PROJECT_DIR$/sport-friend-provider/src/main/java/com/kgc/mapper/Invitation_friendMapper.java" />
-        <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/client/impl/Invitation_friendClientImpl.java" />
-        <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/ColumnMyProviderApp.java" />
-        <option value="$PROJECT_DIR$/sport_column_provider/pom.xml" />
         <option value="$PROJECT_DIR$/sport_column_provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_al.java" />
         <option value="$PROJECT_DIR$/sport_column_provider/src/main/java/com/kgc/mapper/Column_columnMapper.java" />
@@ -221,6 +186,16 @@
         <option value="$PROJECT_DIR$/sport-friend-provider/pom.xml" />
         <option value="$PROJECT_DIR$/sport-friend-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/sport-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/MqUtil.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/MD5.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/RedisUtils.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/BigDecimalUtil.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/Constants.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/EmptyUtils.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/IdWorker.java" />
+        <option value="$PROJECT_DIR$/sport-common/src/main/java/com/kgc/config/RabbitMQConfig.java" />
+        <option value="$PROJECT_DIR$/sport-common/pom.xml" />
       </list>
     </option>
   </component>
@@ -407,6 +382,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -417,68 +393,25 @@
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="my-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -486,7 +419,7 @@
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -495,193 +428,37 @@
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-friend-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-comsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-comsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-comsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kgc" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-comsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="sport-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kgc" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-sport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-sport" type="462c0819:PsiDirectoryNode" />
-              <item name="sport-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -694,8 +471,8 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597569450120" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/springcloud-zuul" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598251066919" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/dubbo-talent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -711,11 +488,11 @@
       <recent name="kgc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-common\src\main\java\com\kgc\config" />
+      <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-common\src\main\java\com\kgc\util" />
       <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-zuul\src\main\resources" />
       <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport_column_consumer\src\main\resources" />
       <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport_column_provider\src\main\resources" />
-      <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-friend-consumer\src\main\resources" />
-      <recent name="I:\tools\git\gitBox\kgc64\springcloud-sport\sport-invitation-comsumer\src\main\java\com\kgc\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -820,10 +597,10 @@
       <item itemvalue="Spring Boot.MyConsumerApp" />
       <item itemvalue="Spring Boot.MyProviderApp" />
       <item itemvalue="Spring Boot.ColumnMyProviderApp" />
-      <item itemvalue="Spring Boot.ConsumerApp" />
-      <item itemvalue="Spring Boot.FriendConsumerApp" />
       <item itemvalue="Spring Boot.ColumnConsumerApp" />
       <item itemvalue="Spring Boot.SportZuulApp" />
+      <item itemvalue="Spring Boot.ConsumerApp" />
+      <item itemvalue="Spring Boot.FriendConsumerApp" />
     </list>
     <recent_temporary>
       <list>
@@ -856,7 +633,9 @@
       <workItem from="1597363828413" duration="30412000" />
       <workItem from="1597469659107" duration="2099000" />
       <workItem from="1597539314452" duration="5946000" />
-      <workItem from="1597562222336" duration="7171000" />
+      <workItem from="1597562222336" duration="7321000" />
+      <workItem from="1597623891075" duration="1251000" />
+      <workItem from="1598228028554" duration="3679000" />
     </task>
     <task id="LOCAL-00001" summary="dev-zfc update">
       <created>1596674292510</created>
@@ -977,11 +756,18 @@
       <option name="project" value="LOCAL" />
       <updated>1597552182242</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="dev-zfc update 2020-08-16 17:00:00">
+      <created>1597569546550</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1597569546550</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149135000" />
+    <option name="totallyTimeSpent" value="154215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -991,7 +777,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24054463" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2708018" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.39508197" />
@@ -1000,7 +786,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.37213114" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.37213114" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -1071,93 +857,10 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/gzs-456/kgc64 into dev-zfc&#10;&#10;# Conflicts:&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/java/com/kgc/service/RestFriendService.java&#10;#&#9;springcloud-sport/sport-friend-provider/src/main/resources/mapper/Tb_friendMapper.xml" />
     <MESSAGE value="dev-zfc update 2020-08-14 18:00:00" />
     <MESSAGE value="dev-zfc update 2020-08-16 12:00:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="dev-zfc update 2020-08-16 12:00:00" />
+    <MESSAGE value="dev-zfc update 2020-08-16 17:00:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="dev-zfc update 2020-08-16 17:00:00" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/controller/Invitation_areaChildController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_areaChildServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_areaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_invitationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-comsumer/src/main/java/com/kgc/service/impl/Invitation_commentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_friendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-friend-consumer/src/main/java/com/kgc/service/impl/Invitation_chatrecordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/resources/mapper/Tb_invitationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_columnMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/pojo/Column_comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport_column_provider/src/main/resources/mapper/Column_commentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="75" column="45" lean-forward="true" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaChildService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="54" column="43" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sport-invitation-provider/src/main/java/com/kgc/service/RestInvitation_areaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -1253,9 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sport-user-provider/src/main/java/com/kgc/MyProviderApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1404,6 +1097,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sport-user-comsumer/src/main/java/com/kgc/Controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="13" column="13" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sport-zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
@@ -1411,10 +1111,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport-user-comsumer/src/main/java/com/kgc/Controller/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/sport-zuul/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="13" column="13" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="450">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/config/RabbitMQConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/PageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/RedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/IdWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/EmptyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/BigDecimalUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/src/main/java/com/kgc/util/MqUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>

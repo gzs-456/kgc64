@@ -29,6 +29,7 @@ public class RestAdminService {
 
     @RequestMapping("/log")
     public User_Admin getlog(@RequestParam Map<String, Object> param){
+        //存入redis
         Map<String,Object> map = new HashMap<>();
         String loginname = param.get("loginname").toString();
         String password = param.get("password").toString();

@@ -15,8 +15,8 @@ public class UserController {
     UserService userService;
 
     @RequestMapping("/Userlog")
-    public User getUserlog(String loginname,String password) {
-        return userService.getUserlog(loginname,password);
+    public User getUserlog(String nickname,String password) {
+        return userService.getUserlog(nickname,password);
     }
 
     @RequestMapping("/getUserId")

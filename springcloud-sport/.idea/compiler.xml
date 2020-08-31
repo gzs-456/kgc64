@@ -14,6 +14,7 @@
         <module name="sport-friend-provider" />
         <module name="sport-invitation-comsumer" />
         <module name="sport-invitation-provider" />
+        <module name="sport-sleuth" />
         <module name="sport-user-comsumer" />
         <module name="sport-user-provider" />
         <module name="sport-zuul" />

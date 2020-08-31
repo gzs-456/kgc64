@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.kgc.mapper.AdminMapper;
 import com.kgc.pojo.User_Admin;
 import com.kgc.util.MD5;
+import com.kgc.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;

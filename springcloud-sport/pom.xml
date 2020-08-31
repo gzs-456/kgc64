@@ -20,6 +20,7 @@
         <module>sport-column-consumer</module>
         <module>sport-column-provider</module>
         <module>sport-zuul</module>
+        <module>sport-sleuth</module>
     </modules>
 
     <parent>

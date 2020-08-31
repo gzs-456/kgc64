@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="my-eureka" />
         <module name="sport-column-consumer" />
+        <module name="sport-column-provider" />
         <module name="sport-common" />
         <module name="sport-friend-consumer" />
         <module name="sport-friend-provider" />
@@ -16,12 +17,10 @@
         <module name="sport-user-comsumer" />
         <module name="sport-user-provider" />
         <module name="sport-zuul" />
-        <module name="sport_column_consumer" />
-        <module name="sport_column_provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="sport-column-provider" target="1.8" />
+      <module name="sport_column_consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

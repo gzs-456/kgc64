@@ -68,6 +68,7 @@ public class RedisUtils {
      * @return
      */
     public boolean exist(String key) {
+
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         //设置序列化Value的实例化对象
         redisTemplate.setValueSerializer(new StringRedisSerializer());
@@ -75,6 +76,7 @@ public class RedisUtils {
         Object value = vo.get(key);
         return EmptyUtils.isEmpty(value) ? false : true;
     }
+
     //setnx 加锁
     public boolean lock(final   String key){
         return redisTemplate.execute(new RedisCallback<Boolean>() {
@@ -89,7 +91,7 @@ public class RedisUtils {
                     //有效期
                     redisConnection.expire(byteKey,60);//秒
                 }
-                return nx;
+            return nx;
             }
         });
     }
@@ -100,12 +102,13 @@ public class RedisUtils {
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         redisTemplate.delete(key);
     }
-    public String  get(String key) {
+
+    public Object get(String key) {
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         //设置序列化Value的实例化对象
         redisTemplate.setValueSerializer(new StringRedisSerializer());
         ValueOperations<String, Object> vo = redisTemplate.opsForValue();
-        return vo.get(key).toString();
+        return vo.get(key);
     }
 
     public void delete(String key) {

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Column_commentMapper">
+    <!--分页，根据评论人昵称，评论时间，评论级别，文章类型,0：普通 1：专栏进行查询
+    并根据评论时间降序排列
+    并根据评论人昵称分组-->
+    <select id="getAllComment" resultType="com.kgc.pojo.Column_comment">
+        SELECT * FROM tb_comment WHERE 1=1
+        <if test="nickname!=null and nickname!='' "> and nickname like concat('%',#{nickname},'%')</if>
+        <if test="publishdate!=null and publishdate!='' "> and publishdate=#{publishdate} order by publishdate desc </if>
+        <if test="parentid!=null and parentid!=-1"> and parentid=#{parentid}</if>
+        <if test="atype!=null and atype!='' "> and atype like concat('%',#{atype},'%')</if>
+        limit ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_comment where 1=1
+        <if test="nickname!=null and nickname!='' "> and nickname like concat('%',#{nickname},'%')</if>
+        <if test="publishdate!=null and publishdate!='' "> and publishdate like concat('%',#{publishdate},'%') order by publishdate desc </if>
+        <if test="parentid!=null and parentid!=-1"> and parentid=#{parentid}</if>
+        <if test="atype!=null and atype!='' "> and atype like concat('%',#{atype},'%')</if>
+    </select>
+
+    <resultMap id="articleMapper" type="com.kgc.pojo.Column_comment">
+        <id column="id" property="id"></id>
+        <result column="nickname" property="nickname"></result>
+        <result column="cpicture" property="cpicture"></result>
+        <result column="content" property="content"></result>
+        <result column="publishdate" property="publishdate"></result>
+        <result column="userid" property="userid"></result>
+        <result column="parentid" property="parentid"></result>
+        <result column="atype" property="atype"></result>
+        <result column="articleid" property="articleid"></result>
+        <association property="article" javaType="com.kgc.pojo.Column_article">
+            <id column="articleid" property="id"></id>
+            <result column="title" property="title"></result>
+            <result column="content" property="content"></result>
+            <result column="image" property="image"></result>
+            <result column="createtime" property="createtime"></result>
+            <result column="updatetime" property="updatetime"></result>
+            <result column="ispublic" property="ispublic"></result>
+            <result column="istop" property="istop"></result>
+            <result column="visits" property="visits"></result>
+            <result column="thumbup" property="thumbup"></result>
+            <result column="acomment" property="acomment"></result>
+            <result column="state" property="state"></result>
+            <result column="url" property="url"></result>
+            <result column="atype" property="atype"></result>
+            <result column="columnid" property="columnid"></result>
+            <result column="userid" property="userid"></result>
+            <result column="alid" property="alid"></result>
+        </association>
+    </resultMap>
+    <!--根据文章编号，文章类型,0：普通 1：专栏来查询普通文章或是专栏文章的评论信息-->
+    <select id="getCommentById" resultMap="articleMapper">
+        SELECT * FROM tb_comment
+        INNER JOIN tb_article
+        ON tb_article.id=tb_comment.articleid
+        WHERE 1=1
+        <if test="articleid!=null and articleid!=-1"> and articleid=#{articleid}</if>
+        <if test="atype!=null and atype!='' "> and tb_comment.atype=#{atype}</if>
+    </select>
+
+    <!--添加评论-->
+    <insert id="addComment" parameterType="com.kgc.pojo.Column_comment">
+        INSERT INTO tb_comment VALUES(NULL,#{nickname},#{cpicture},#{content},now(),#{articleid},#{userid},#{parentid},#{atype})
+    </insert>
+
+    <!--更新评论信息-->
+    <update id="updateComment" parameterType="com.kgc.pojo.Column_comment">
+        UPDATE tb_comment SET nickname=#{nickname},cpicture=#{cpicture},content=#{content},articleid=#{articleid},userid=#{userid},parentid=#{parentid},atype=#{atype}
+        WHERE id=#{id}
+    </update>
+
+    <!--根据评论编号，删除评论信息-->
+    <delete id="deleteComment" parameterType="int">
+        DELETE FROM tb_comment WHERE id=#{id}
+    </delete>
+</mapper> 

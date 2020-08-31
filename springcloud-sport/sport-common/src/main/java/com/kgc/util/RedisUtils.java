@@ -1,5 +1,6 @@
 package com.kgc.util;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
@@ -67,6 +68,7 @@ public class RedisUtils {
      * @return
      */
     public boolean exist(String key) {
+
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         //设置序列化Value的实例化对象
         redisTemplate.setValueSerializer(new StringRedisSerializer());
@@ -76,20 +78,20 @@ public class RedisUtils {
     }
 
     //setnx 加锁
-    public boolean lock(final String key){
+    public boolean lock(final   String key){
         return redisTemplate.execute(new RedisCallback<Boolean>() {
             @Override
             public Boolean doInRedis(RedisConnection redisConnection) throws DataAccessException {
                 //序列化
-                StringRedisSerializer serializer=new StringRedisSerializer();
-                byte[] bytekey = serializer.serialize(key);
-                byte[] bytevalue  = serializer.serialize("lock");
-                Boolean nx = redisConnection.setNX(bytekey, bytevalue);
+                StringRedisSerializer serializer = new StringRedisSerializer();
+                byte[] byteKey = serializer.serialize(key);
+                byte[] bytevalue = serializer.serialize("lock");
+                boolean nx=redisConnection.setNX(byteKey, bytevalue);
                 if(nx) {
                     //有效期
-                    redisConnection.expire(bytekey,60);//秒
+                    redisConnection.expire(byteKey,60);//秒
                 }
-                return nx;
+            return nx;
             }
         });
     }
@@ -100,8 +102,6 @@ public class RedisUtils {
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         redisTemplate.delete(key);
     }
-
-
 
     public Object get(String key) {
         redisTemplate.setKeySerializer(new StringRedisSerializer());

@@ -18,9 +18,7 @@
         <module>sport-friend-provider</module>
         <module>sport-friend-consumer</module>
         <module>sport-column-consumer</module>
-        <module>../../kgc64springcloud-sport/sport-column-provider</module>
-        <module>sport_column_provider</module>
-        <module>sport_column_consumer</module>
+        <module>sport-column-provider</module>
         <module>sport-zuul</module>
     </modules>
 

@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.kgc.pojo.Invitation_chatrecord;
 import com.kgc.service.Invitation_chatrecordService;
 import com.kgc.util.PageUtil;
-import com.kgc.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

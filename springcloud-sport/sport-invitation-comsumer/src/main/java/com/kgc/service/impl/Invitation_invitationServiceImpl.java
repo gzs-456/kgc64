@@ -7,6 +7,7 @@ import com.kgc.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,12 +15,23 @@ import java.util.Map;
 public class Invitation_invitationServiceImpl implements Invitation_invitationService {
     @Autowired
     private Invitation_invitationClient invitationClient;
+
     //分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
     //可以根据点赞数，推荐数，浏览数，发布时间 降序排列
     @Override
     public PageUtil<Invitation_invitation> getTb_invitationPage(Invitation_invitation  invitation, Integer pageIndex, Integer pageSize) {
         //封装成一个map对象
         Map<String,Object>map=new HashMap<>();
+        map.put("id",invitation.getId());
+        map.put("title", invitation.getTitle());
+        map.put("iname", invitation.getIname());
+        map.put("content", invitation.getContent());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        map.put("ftime", invitation.getFtime());
+        map.put("utime", invitation.getUtime());
+        map.put("snum", invitation.getSnum());
+        map.put("rnum", invitation.getRnum());
+        map.put("seenum", invitation.getSeenum());
         map.put("invitation",invitation);
         map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
@@ -55,6 +67,7 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
     public int updateSeenum(Integer id) {
         return invitationClient.updateSeenum(id);
     }
+
     //据ID删除某个帖子
     @Override
     public int deleteTb_invitation(Integer id) {

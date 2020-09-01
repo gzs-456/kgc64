@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>my-eureka</module>
+        <module>sport-eureka</module>
         <module>sport-common</module>
         <module>sport-user-provider</module>
         <module>sport-user-comsumer</module>
@@ -18,7 +18,7 @@
         <module>sport-friend-provider</module>
         <module>sport-friend-consumer</module>
         <module>sport-column-consumer</module>
-        <module>sport_column_provider</module>
+        <module>sport-column-provider</module>
         <module>sport-zuul</module>
         <module>sport-sleuth</module>
     </modules>

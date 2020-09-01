@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/invitation")
 @Api(value = "社交模块",description = "处理帖子")
 public class Invitation_invitationController {
     @Autowired

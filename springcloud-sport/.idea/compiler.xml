@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="my-eureka" />
         <module name="sport-column-consumer" />
         <module name="sport-column-provider" />
         <module name="sport-common" />
+        <module name="sport-eureka" />
         <module name="sport-friend-consumer" />
         <module name="sport-friend-provider" />
         <module name="sport-invitation-comsumer" />

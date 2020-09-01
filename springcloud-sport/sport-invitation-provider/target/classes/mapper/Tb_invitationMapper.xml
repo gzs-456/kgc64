@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_invitationMapper">
+    <!--分页-->
+    <select id="getTb_invitationPage" resultType="com.kgc.pojo.Invitation_invitation">
+        SELECT * FROM tb_invitation WHERE 1=1
+        <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
+        <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>
+        <if test="ftime!=null and ftime!=''"> and ftime like CONCAT('%',#{ftime},'%') order by ftime desc</if>
+        <if test="snum!=null and snum==-1">  order by snum desc</if>
+        <if test="rnum!=null and rnum==-1">  order by rnum desc</if>
+        <if test="seenum!=null and seenum==-1"> order by seenum desc</if>
+        limit ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_invitation WHERE 1=1
+        <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>
+        <if test="iname!=null and iname!=''"> and iname like concat('%',#{iname},'%')</if>
+        <if test="ftime!=null and ftime!=''"> and ftime like CONCAT('%',#{ftime},'%') order by ftime desc</if>
+        <if test="snum!=null and snum==-1">  order by snum desc</if>
+        <if test="rnum!=null and rnum==-1">  order by rnum desc</if>
+        <if test="seenum!=null and seenum==-1"> order by seenum desc</if>
+    </select>
+
+    <!--根据帖子编号查询某一个帖子信息-->
+    <select id="getTb_invitationById" resultType="com.kgc.pojo.Invitation_invitation">
+          SELECT * FROM tb_invitation WHERE id=#{id}
+    </select>
+
+    <!--添加新的帖子-->
+    <insert id="addTb_invitation" parameterType="com.kgc.pojo.Invitation_invitation">
+        INSERT INTO tb_invitation VALUES(NULL,#{title},#{iname},#{content},NOW(),NOW(),DEFAULT,DEFAULT,DEFAULT)
+    </insert>
+
+    <!--更新帖子信息-->
+    <update id="updateTb_invitation" parameterType="com.kgc.pojo.Invitation_invitation">
+        UPDATE tb_invitation SET title=#{title},iname=#{iname},content=#{content},utime=now()
+        WHERE id=#{id}
+    </update>
+
+    <!--根据帖子ID更新帖子点赞数-->
+    <select id="updateSnum" parameterType="int">
+        UPDATE tb_invitation SET snum=snum+1 WHERE id=#{id}
+    </select>
+
+    <!--根据帖子ID更新帖子推荐数-->
+    <select id="updateRnum" parameterType="int">
+        UPDATE tb_invitation SET rnum=rnum+1 WHERE id=#{id}
+    </select>
+
+    <!--根据帖子ID更新帖子浏览数-->
+    <select id="updateSeenum" parameterType="int">
+        UPDATE tb_invitation SET seenum=seenum+1 WHERE id=#{id}
+    </select>
+
+    <!--据ID删除某个帖子-->
+    <delete id="deleteTb_invitation" parameterType="int">
+        DELETE FROM tb_invitation WHERE id=#{id}
+    </delete>
+</mapper> 

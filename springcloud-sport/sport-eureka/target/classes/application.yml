@@ -1,0 +1,15 @@
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+    register-with-eureka: false #不需要管理本身
+    fetch-registry: false #自己不检索服务
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: root
+    password: ok

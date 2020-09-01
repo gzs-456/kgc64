@@ -1,0 +1,19 @@
+server:
+  port: 5081
+spring:
+  application:
+    name: sport-zuul
+  zipkin:
+    base-url: http://localhost:8011
+  sleuth:
+    sampler:
+      percentage: 1.0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+zuul:
+  routes:
+    sport-friend-consumer: /friend/**
+    sport-user-comsumer: /user/**
+    sport-column-consumer: /column/**

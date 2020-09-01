@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.mapper.Tb_commentMapper">
+    <!--分页，帖子表，评论表两表连接查询,根据帖子编号查询所有评论-->
+    <select id="getTb_commentPage" resultType="com.kgc.pojo.Invitation_comment">
+        SELECT * FROM tb_comment
+        INNER JOIN tb_invitation
+        ON tb_invitation.id=tb_comment.invitationId
+        WHERE 1=1
+        <if test="invitationId!=null and invitationId!=-1"> and invitationId=#{invitationId} </if>
+        limit ${pageIndex},${pageSize}
+    </select>
+    <select id="getCount" resultType="int">
+        SELECT COUNT(*) FROM tb_comment where 1=1
+        <if test="invitationId!=null and invitationId!=-1"> and invitationId=#{invitationId} </if>
+    </select>
+
+    <!--添加新的帖子评论-->
+    <insert id="addTb_comment" parameterType="com.kgc.pojo.Invitation_comment">
+        INSERT INTO tb_comment VALUES(NULL,#{cname},#{content},now(),#{cpicture},default,#{invitationId})
+    </insert>
+
+    <!--更新帖子评论信息-->
+    <update id="updateTb_comment" parameterType="com.kgc.pojo.Invitation_comment">
+        UPDATE tb_comment SET cname=#{cname},content=#{content},cpicture=#{cpicture},invitationId=#{invitationId}  WHERE id=#{id}
+    </update>
+
+    <!--根据帖子ID更新帖子评论的点赞数-->
+    <update id="updateCnum" parameterType="int">
+        UPDATE tb_comment SET cnum=cnum+1 WHERE id=#{id}
+    </update>
+
+    <!--根据ID删除某个帖子评论-->
+    <delete id="deleteTb_comment" parameterType="int">
+        DELETE FROM tb_comment WHERE id=#{id}
+    </delete>
+</mapper> 

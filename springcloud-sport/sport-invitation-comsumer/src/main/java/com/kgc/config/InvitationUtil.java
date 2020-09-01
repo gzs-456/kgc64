@@ -56,14 +56,16 @@ public class InvitationUtil {
         System.out.println("创建索引和映射");
         //创建索引 名字
         CreateIndexRequest createIndexRequest = new CreateIndexRequest("tb_invitation");
+        //System.out.println("11");
         //索引设置
         createIndexRequest.settings(Settings.builder().put("number_of_shards", 1).put("number_of_replicas", 0));
+        //System.out.println("22");
         //创建映射
         //设置映射
         createIndexRequest.mapping("doc","{\n" +
                 "\t\"properties\": {\n" +
                 "\t\t\"id\": {\n" +
-                "\t\t\t\"type\": \"int\"\n" +
+                "\t\t\t\"type\": \"integer\"\n" +
                 "\t\t},\n" +
                 "\t\t\"title\": {\n" +
                 "\t\t\t\"type\": \"text\",\n" +
@@ -71,32 +73,33 @@ public class InvitationUtil {
                 "\t\t\t\"search_analyzer\": \"ik_smart\"\n" +
                 "\t\t},\n" +
                 "\t\t\"iname\": {\n" +
-                "\t\t\t\"type\": \"keyword\"\n" +
-                "\t\t},\n" +
-                "\t\t\"content\": {\n" +
                 "\t\t\t\"type\": \"text\",\n" +
-                "\t\t\t\"analyzer\": \"ik_max_word\",\n" +
+                "            \"analyzer\": \"ik_max_word\",\n" +
                 "\t\t\t\"search_analyzer\": \"ik_smart\"\n" +
                 "\t\t},\n" +
+                "\t\t\"content\": {\n" +
+                "\t\t\t\"type\": \"keyword\"\n" +
+                "\t\t},\n" +
                 "\t\t\"ftime\": {\n" +
-                "\t\t\t\"type\": \"dateTime\",\n" +
+                "\t\t\t\"type\": \"date\",\n" +
                 "\t\t\t\"format\": \"yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis\"\n" +
-                "\t\t}\n" +
-                "\t\t\"utime\": {\n" +
-                "\t\t\t\"type\": \"dateTime\",\n" +
+                "\t\t},\n" +
+                "        \"utime\": {\n" +
+                "\t\t\t\"type\": \"date\",\n" +
                 "\t\t\t\"format\": \"yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis\"\n" +
-                "\t\t}\n" +
-                "\t\t\"snum\": {\n" +
-                "\t\t\t\"type\": \"int\"\n" +
-                "\t\t}\n" +
-                "\t\t\"rnum\": {\n" +
-                "\t\t\t\"type\": \"int\"\n" +
-                "\t\t}\n" +
-                "\t\t\"seenum\": {\n" +
-                "\t\t\t\"type\": \"int\"\n" +
+                "\t\t},\n" +
+                "        \"snum\": {\n" +
+                "\t\t\t\"type\": \"integer\"\n" +
+                "\t\t},\n" +
+                "        \"rnum\": {\n" +
+                "\t\t\t\"type\": \"integer\"\n" +
+                "\t\t},\n" +
+                "        \"seenum\": {\n" +
+                "\t\t\t\"type\": \"integer\"\n" +
                 "\t\t}\n" +
                 "\t}\n" +
                 "}", XContentType.JSON);
+        //System.out.println("33");
         //创建索引操作客户端
         IndicesClient indices = restHighLevelClient.indices();
         //创建并返回一个响应对象

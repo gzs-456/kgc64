@@ -204,7 +204,7 @@ public class InvitationUtil {
         System.out.println(sourceAsMap);
     }
 
-    //精准查,根据输入的关键字不在进行分词
+    /*//精准查,根据输入的关键字不在进行分词
     public void termQuery() throws IOException {
         //创建查询请求对象
         SearchRequest searchRequest = new SearchRequest("tb_invitation");
@@ -242,7 +242,7 @@ public class InvitationUtil {
             System.out.println(invitationId+"\t"+invitationTitle+"\t"+invitationIname+"\t"+invitationContent+"\n"+invitationFtime+"\t"+
                     invitationUtime+"\t"+invitationSnum+"\t"+invitationRnum+"\t"+invitationSeenum);
         }
-    }
+    }*/
 
     //分词查询
     public void matchquery() throws IOException {

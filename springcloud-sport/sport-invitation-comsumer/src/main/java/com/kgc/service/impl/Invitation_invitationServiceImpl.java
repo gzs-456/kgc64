@@ -1,12 +1,14 @@
 package com.kgc.service.impl;
 
 import com.kgc.client.Invitation_invitationClient;
+import com.kgc.config.InvitationUtil;
 import com.kgc.pojo.Invitation_invitation;
 import com.kgc.service.Invitation_invitationService;
 import com.kgc.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +17,8 @@ import java.util.Map;
 public class Invitation_invitationServiceImpl implements Invitation_invitationService {
     @Autowired
     private Invitation_invitationClient invitationClient;
-
+    @Autowired
+    private InvitationUtil invitationUtil;
     //分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
     //可以根据点赞数，推荐数，浏览数，发布时间 降序排列
     @Override
@@ -35,6 +38,12 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
         map.put("invitation",invitation);
         map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
+        try {
+            invitationUtil.searchpage(pageIndex,pageSize);
+            System.out.println("es进来了");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return invitationClient.getTb_invitationPage(map);
     }
     //根据帖子编号查询某一个帖子信息

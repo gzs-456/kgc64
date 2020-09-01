@@ -1,12 +1,14 @@
 package com.kgc.service.impl;
 
 import com.kgc.client.Invitation_areaChildClient;
+import com.kgc.config.InvitationUtil;
 import com.kgc.pojo.Invitation_areaChild;
 import com.kgc.service.Invitation_areaChildService;
 import com.kgc.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +17,9 @@ import java.util.Map;
 public class Invitation_areaChildServiceImpl implements Invitation_areaChildService {
     @Autowired
     private Invitation_areaChildClient areaChildClient;
+    @Autowired
+    private InvitationUtil invitationUtil;
+
     //分页,根据专区子版块名称查询所有
     @Override
     public PageUtil<Invitation_areaChild> getTb_areaChildPage(String areaname, Integer pageIndex, Integer pageSize) {
@@ -23,6 +28,11 @@ public class Invitation_areaChildServiceImpl implements Invitation_areaChildServ
         map.put("areaname",areaname);
         map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
+        try {
+            invitationUtil.searchpage(pageIndex,pageSize);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return areaChildClient.getTb_areaChildPage(map);
     }
     //帖子表，专区子版块表两表连接查询,根据帖子编号查询所有专区子版块

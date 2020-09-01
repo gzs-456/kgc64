@@ -18,7 +18,7 @@ public class ConsumerApp {
         ConfigurableApplicationContext run = SpringApplication.run(ConsumerApp.class, args);
         InvitationUtil invitationUtil=run.getBean(InvitationUtil.class);
         try {
-            invitationUtil.createIndex();
+            //invitationUtil.createIndex();
             //invitationUtil.addDoc();
             //invitationUtil.deleteIndex();
             //invitationUtil.fetchSource();

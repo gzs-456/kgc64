@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
-@Api(value = "社交模块",description = "处理帖子")
+//@Api(value = "社交模块",description = "处理帖子")
 public class Invitation_invitationController {
     @Autowired
     private Invitation_invitationService invitationService;
@@ -21,14 +21,7 @@ public class Invitation_invitationController {
         分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
         可以根据点赞数，推荐数，浏览数，发布时间 降序排列
      */
-    @RequestMapping("/getTb_invitationPage/{pageIndex}/{pageSize}")
-    @ApiOperation(value = "分页",notes = "模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间\n" +
-            "        可以根据点赞数，推荐数，浏览数，发布时间 降序排列")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "invitation", value = "帖子对象", required = false, dataType = "Invitation_invitation"),
-            @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer",paramType="path"),
-            @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer",paramType="path")
-    })
+    @RequestMapping("/getTb_invitationPage")
     public PageUtil<Invitation_invitation> getTb_invitationPage(@RequestBody Invitation_invitation  invitation,
            @RequestParam(value = "pageIndex",required =false, defaultValue = "1") Integer pageIndex,
            @RequestParam(value = "pageSize",required =false, defaultValue = "2") Integer pageSize) {

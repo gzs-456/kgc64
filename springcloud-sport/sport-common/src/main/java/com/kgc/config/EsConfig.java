@@ -16,7 +16,7 @@ public class EsConfig {
     //创建客户端对象
     @Bean
     public RestHighLevelClient createClient(){
-        //配件集群环境的代码
+        //配件集群环境的代码1
         String [] hosts = hostList.split(",");
         HttpHost [] httpHosts=new HttpHost[hosts.length];
         for (int i = 0; i < hosts.length; i++) {

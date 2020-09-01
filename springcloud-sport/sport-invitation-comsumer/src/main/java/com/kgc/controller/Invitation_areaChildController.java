@@ -14,20 +14,20 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/invitation")
-@Api(value = "社交模块",description = "处理专区子版块")
+//@RequestMapping("/invitation")
+//@Api(value = "社交模块",description = "处理专区子版块")
 public class Invitation_areaChildController {
     @Autowired
     private Invitation_areaChildService areaChildService;
 
     //分页,根据专区子版块名称查询所有
     @RequestMapping("/getTb_areaChildPage/{pageIndex}/{pageSize}")
-    @ApiImplicitParams({
+   /* @ApiImplicitParams({
             @ApiImplicitParam(name = "areaname", value = "专区子版块名称", required = false, dataType = "String"),
             @ApiImplicitParam(name = "pageIndex", value = "页码默认为1", required = false, dataType = "Integer",paramType="path"),
             @ApiImplicitParam(name = "pageSize", value = "每页条数默认为2", required = false, dataType = "Integer",paramType="path")
-    })
-    @ApiOperation(value = "分页",notes = "根据专区子版块名称查询所有,页码默认为1，每页条数默认为2")
+    })*/
+    //@ApiOperation(value = "分页",notes = "根据专区子版块名称查询所有,页码默认为1，每页条数默认为2")
     public PageUtil<Invitation_areaChild> getTb_areaChildPage(String areaname,
             @RequestParam(value = "pageIndex",required =false, defaultValue = "1") Integer pageIndex,
             @RequestParam(value = "pageSize",required =false, defaultValue = "2") Integer pageSize) {

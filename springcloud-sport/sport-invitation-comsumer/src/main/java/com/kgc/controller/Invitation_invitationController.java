@@ -31,8 +31,8 @@ public class Invitation_invitationController {
 
     //根据帖子编号查询某一个帖子信息
     @RequestMapping("/getTb_invitationById/{id}")
-    @ApiOperation(value = "查询某一个帖子信息",notes = "根据帖子编号查询某一个帖子信息")
-    @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
+    //@ApiOperation(value = "查询某一个帖子信息",notes = "根据帖子编号查询某一个帖子信息")
+    //@ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
     public Invitation_invitation getTb_invitationById(@PathVariable("id") Integer id){
         return invitationService.getTb_invitationById(id);
     }
@@ -40,8 +40,8 @@ public class Invitation_invitationController {
 
     //添加新的帖子
     @RequestMapping("/addTb_invitation")
-    @ApiOperation(value = "添加",notes = "添加新的帖子")
-    @ApiImplicitParam(name = "invitation", value = "帖子对象", required = false, dataType = "Invitation_invitation")
+    //@ApiOperation(value = "添加",notes = "添加新的帖子")
+    //@ApiImplicitParam(name = "invitation", value = "帖子对象", required = false, dataType = "Invitation_invitation")
     public int addTb_invitation(@RequestBody Invitation_invitation invitation) {
         return invitationService.addTb_invitation(invitation);
     }

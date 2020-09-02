@@ -1,5 +1,6 @@
 package com.kgc.config;
 
+import com.kgc.pojo.Invitation_invitation;
 import org.elasticsearch.action.DocWriteResponse;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
@@ -126,9 +127,9 @@ public class InvitationUtil {
     }
 
     //添加
-    public void addDoc() throws IOException {
+    public void addDoc(Map<String,Object> jsonMap) throws IOException {
         //准备json数据
-        Map<String, Object> jsonMap = new HashMap<>();
+        //jsonMap = new HashMap<>();
         jsonMap.put("id",id);
         jsonMap.put("title", title);
         jsonMap.put("iname", iname);
@@ -152,6 +153,7 @@ public class InvitationUtil {
 
     //分页
     public void searchpage(Integer pageIndex,Integer pageSize) throws IOException {
+        System.out.println("进入es");
         //创建查询请求对象
         SearchRequest searchRequest = new SearchRequest("tb_invitation");
         searchRequest.types("doc");
@@ -193,6 +195,7 @@ public class InvitationUtil {
             int invitationSnum=Integer.parseInt((String) sourceAsMap.get("snum"));
             int invitationRnum=Integer.parseInt((String) sourceAsMap.get("rnum"));
             int invitationSeenum=Integer.parseInt((String) sourceAsMap.get("seenum"));
+            System.out.println("es成功");
             System.out.println(invitationId+"\t"+invitationTitle+"\t"+invitationIname+"\t"+invitationContent+"\n"+invitationFtime+"\t"+
                     invitationUtime+"\t"+invitationSnum+"\t"+invitationRnum+"\t"+invitationSeenum);
 

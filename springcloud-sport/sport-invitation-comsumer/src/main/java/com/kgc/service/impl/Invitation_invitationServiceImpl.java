@@ -38,9 +38,11 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
         map.put("invitation",invitation);
         map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
+        //System.out.println(map);
+        Map<String ,Object> map2=new HashMap<>();
+        map2.put("map",map);
         try {
-            invitationUtil.searchpage(pageIndex,pageSize);
-            System.out.println("es进来了");
+            invitationUtil.addDoc(map2);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -12,6 +12,7 @@
         <if test="seenum!=null and seenum==-1"> order by seenum desc</if>
         limit ${pageIndex},${pageSize}
     </select>
+
     <select id="getCount" resultType="int">
         SELECT COUNT(*) FROM tb_invitation WHERE 1=1
         <if test="title!=null and title!=''"> and title like concat('%',#{title},'%')</if>

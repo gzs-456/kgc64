@@ -1,6 +1,9 @@
 package com.kgc.config;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.kgc.pojo.Invitation_invitation;
+import com.kgc.util.PageUtil;
 import org.elasticsearch.action.DocWriteResponse;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
@@ -35,6 +38,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Configuration
@@ -127,19 +131,23 @@ public class InvitationUtil {
     }
 
     //添加
-    public void addDoc(Map<String,Object> jsonMap) throws IOException {
+    public void addDoc(PageUtil<Invitation_invitation> page) throws IOException {
         //准备json数据
-        //jsonMap = new HashMap<>();
-        jsonMap.put("id",id);
-        jsonMap.put("title", title);
-        jsonMap.put("iname", iname);
+        Map<String,Object>  jsonMap = new HashMap<>();
+        List<Invitation_invitation> list=page.getList();
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+        /*jsonMap.put("id",invitation.getId());
+        jsonMap.put("title", invitation.getTitle());
+        jsonMap.put("iname", invitation.getIname());
         jsonMap.put("content", content);
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         jsonMap.put("ftime", dateFormat.format(new Date()));
         jsonMap.put("utime", dateFormat.format(new Date()));
-        jsonMap.put("snum", snum);
-        jsonMap.put("rnum", rnum);
-        jsonMap.put("seenum", seenum);
+        jsonMap.put("snum", invitation.getSnum());
+        jsonMap.put("rnum", invitation.getRnum());
+        jsonMap.put("seenum", invitation.getSeenum());*/
         //创建请求对象 库，表 id可加可不加
         IndexRequest indexRequest = new IndexRequest("tb_invitation", "doc"+"");
         //指定索引文档内容

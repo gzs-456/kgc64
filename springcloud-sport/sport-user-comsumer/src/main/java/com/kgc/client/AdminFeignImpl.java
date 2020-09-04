@@ -18,4 +18,19 @@ public class AdminFeignImpl implements AdminFeign {
     public User_Admin getAdminId(Integer id) {
         return null;
     }
+
+    @Override
+    public int add(User_Admin user_admin) {
+        return 0;
+    }
+
+    @Override
+    public int Update(User_Admin user_admin) {
+        return 0;
+    }
+
+    @Override
+    public int delect(Integer id) {
+        return 0;
+    }
 }

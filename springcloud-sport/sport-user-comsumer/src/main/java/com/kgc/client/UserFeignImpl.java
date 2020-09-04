@@ -17,4 +17,19 @@ public class UserFeignImpl implements UserFeign {
     public User getUserId(Integer id) {
         return null;
     }
+
+    @Override
+    public int Useradd(User user) {
+        return 0;
+    }
+
+    @Override
+    public int UserUpdate(User user) {
+        return 0;
+    }
+
+    @Override
+    public int Userdelect(Integer id) {
+        return 0;
+    }
 }

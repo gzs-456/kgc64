@@ -27,4 +27,19 @@ public class AdminServiceImpl implements AdminService {
     public User_Admin getAdminId(Integer id) {
         return adminFeign.getAdminId(id);
     }
+
+    @Override
+    public int add(User_Admin user_admin) {
+        return adminFeign.add(user_admin);
+    }
+
+    @Override
+    public int Update(User_Admin user_admin) {
+        return adminFeign.Update(user_admin);
+    }
+
+    @Override
+    public int delect(Integer id) {
+        return adminFeign.delect(id);
+    }
 }

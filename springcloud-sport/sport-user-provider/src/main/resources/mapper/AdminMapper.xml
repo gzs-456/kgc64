@@ -14,4 +14,20 @@
         SELECT * FROM tb_admin
         WHERE id=#{id}
     </select>
+
+
+    <insert id="add" parameterType="com.kgc.pojo.User_Admin">
+         INSERT INTO tb_admin VALUES(NULL,#{loginname},#{password},#{state})
+    </insert>
+
+    <update id="Update" parameterType="com.kgc.pojo.User_Admin">
+        UPDATE tb_admin
+        SET loginname=#{loginname},password=#{password},state=#{state}
+        WHERE id=#{id}
+    </update>
+
+    <delete id="delect" parameterType="int">
+        DELETE FROM tb_admin
+	    WHERE id =#{id};
+    </delete>
 </mapper>  

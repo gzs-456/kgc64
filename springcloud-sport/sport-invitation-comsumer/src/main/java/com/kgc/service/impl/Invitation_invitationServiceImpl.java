@@ -4,7 +4,11 @@ import com.kgc.client.Invitation_invitationClient;
 import com.kgc.config.InvitationUtil;
 import com.kgc.pojo.Invitation_invitation;
 import com.kgc.service.Invitation_invitationService;
-import com.kgc.util.PageUtil;
+import com.kgc.util.*;
+import com.kgc.vo.MqMessVo;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.connection.RabbitUtils;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +25,10 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
     private Invitation_invitationClient invitationClient;
     @Autowired
     private InvitationUtil invitationUtil;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+    @Autowired
+    private RedisUtils redisUtils;
     //分页，模糊查询的条件有帖子标题，发布者昵称，点赞数，推荐数，浏览数，发布时间
     //可以根据点赞数，推荐数，浏览数，发布时间 降序排列
     @Override
@@ -84,5 +92,44 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
     @Override
     public int deleteTb_invitation(Integer id) {
         return invitationClient.deleteTb_invitation(id);
+    }
+
+    @Override
+    public void initAssBRedis() {
+        invitationClient.initAssBRedis();
+    }
+
+    @Override
+    public Dto addInvitation(Integer userid, Integer invid) {
+        MqMessVo mqMessVo = new MqMessVo();
+        mqMessVo.setGoodsId(invid);
+        mqMessVo.setToken(userid);
+        rabbitTemplate.convertAndSend(RabbitConfig.EXCHANGE, "inform.sms.email", mqMessVo);
+        return DtoUtil.returnSuccess("正在排队中");
+    }
+
+    @RabbitListener(queues = RabbitConfig.QUEQU_SMS)
+    public void reviceQgMessage(MqMessVo messVo) {
+        System.out.println(messVo);
+        //分布式锁
+        String key = "lock:" + messVo.getGoodsId();
+        try {
+            //后面的线程排队
+            while (redisUtils.lock(key) == false) {
+                Thread.sleep(500);
+            }
+            //3 锁定商品抢购
+            int num = invitationClient.lockGoods(messVo.getGoodsId(), messVo.getToken());
+            if (num == 0) {
+                return;
+            }
+            return;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        } finally {
+            //解锁
+            redisUtils.unlock(key);
+        }
     }
 }

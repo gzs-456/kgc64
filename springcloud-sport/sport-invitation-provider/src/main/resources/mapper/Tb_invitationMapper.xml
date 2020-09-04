@@ -40,22 +40,30 @@
     </update>
 
     <!--根据帖子ID更新帖子点赞数-->
-    <select id="updateSnum" parameterType="int">
+    <update id="updateSnum" parameterType="int">
         UPDATE tb_invitation SET snum=snum+1 WHERE id=#{id}
-    </select>
+    </update>
 
     <!--根据帖子ID更新帖子推荐数-->
-    <select id="updateRnum" parameterType="int">
+    <update id="updateRnum" parameterType="int">
         UPDATE tb_invitation SET rnum=rnum+1 WHERE id=#{id}
-    </select>
+    </update>
 
     <!--根据帖子ID更新帖子浏览数-->
-    <select id="updateSeenum" parameterType="int">
+    <update id="updateSeenum" parameterType="int">
         UPDATE tb_invitation SET seenum=seenum+1 WHERE id=#{id}
-    </select>
+    </update>
 
     <!--据ID删除某个帖子-->
     <delete id="deleteTb_invitation" parameterType="int">
         DELETE FROM tb_invitation WHERE id=#{id}
     </delete>
+    <!--查询全部-->
+    <select id="getAllInvitation" resultType="com.kgc.pojo.Invitation_invitation">
+         select * from tb_invitation
+    </select>
+
+    <insert id="addInvitation" parameterType="int">
+        INSERT INTO tb_invitationRedis VALUES(NULL,#{userid},#{invid},NOW())
+    </insert>
 </mapper> 

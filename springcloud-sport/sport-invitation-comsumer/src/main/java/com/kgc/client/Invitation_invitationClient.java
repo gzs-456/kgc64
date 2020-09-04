@@ -39,4 +39,9 @@ public interface Invitation_invitationClient {
     //据ID删除某个帖子
     @RequestMapping("/deleteTb_invitation/{id}")
     public int deleteTb_invitation(@PathVariable("id") Integer id);
+    @RequestMapping("/init")
+    public void initAssBRedis();
+    @RequestMapping("/lockGoods")
+    public int lockGoods(@RequestParam(value="invid",required = false,defaultValue = "1") Integer invid,
+                         @RequestParam(value="userid",required = false,defaultValue = "1")  Integer userid);
 }

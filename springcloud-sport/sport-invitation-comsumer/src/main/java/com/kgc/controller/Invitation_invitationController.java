@@ -2,6 +2,8 @@ package com.kgc.controller;
 
 import com.kgc.pojo.Invitation_invitation;
 import com.kgc.service.Invitation_invitationService;
+import com.kgc.util.Dto;
+import com.kgc.util.DtoUtil;
 import com.kgc.util.PageUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -89,5 +91,29 @@ public class Invitation_invitationController {
     @ApiImplicitParam(name = "id", value = "帖子编号", required = false, dataType = "Integer",paramType="path")
     public int deleteTb_invitation(@PathVariable("id") Integer id){
         return invitationService.deleteTb_invitation(id);
+    }
+
+
+
+    @RequestMapping("/init")
+    public Dto init() {
+        try {
+            invitationService.initAssBRedis();
+            return DtoUtil.returnSuccess("ok");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return DtoUtil.returnFail("fail", "1001");
+        }
+    }
+
+    @RequestMapping("/qg")
+    public Dto qg(Integer invid, Integer userId) {
+        try {
+            //调用业务
+            return invitationService.addInvitation(invid, userId);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return DtoUtil.returnFail("抢购异常", "1005");
+        }
     }
 }

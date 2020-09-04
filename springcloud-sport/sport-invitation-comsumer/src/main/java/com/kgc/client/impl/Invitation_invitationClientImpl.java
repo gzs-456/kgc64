@@ -47,4 +47,14 @@ public class Invitation_invitationClientImpl implements Invitation_invitationCli
     public int deleteTb_invitation(Integer id) {
         return 0;
     }
+
+    @Override
+    public void initAssBRedis() {
+
+    }
+
+    @Override
+    public int lockGoods(Integer invid, Integer userid) {
+        return 0;
+    }
 }

@@ -12,5 +12,7 @@ eureka:
 feign:
   hystrix:
     enabled: true
+myes:
+  host: 127.0.0.1:9200
 
 

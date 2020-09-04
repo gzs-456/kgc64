@@ -1,7 +1,10 @@
 package com.kgc.service;
 
 import com.kgc.pojo.Invitation_invitation;
+import com.kgc.util.Dto;
 import com.kgc.util.PageUtil;
+
+import java.util.List;
 
 
 public interface Invitation_invitationService {
@@ -29,4 +32,9 @@ public interface Invitation_invitationService {
 
     //据ID删除某个帖子
     public int deleteTb_invitation(Integer id);
+
+    //查询全部
+    public void initAssBRedis();
+    //添加信息
+    public Dto addInvitation(Integer userid , Integer invid);
 }

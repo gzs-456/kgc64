@@ -2,6 +2,7 @@ package com.kgc.mapper;
 
 import com.kgc.pojo.Invitation_invitation;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -36,4 +37,9 @@ public interface Tb_invitationMapper {
 
     //据ID删除某个帖子
     public int deleteTb_invitation(Integer id);
+
+    //查询全部
+    public List<Invitation_invitation> getAllInvitation();
+    //添加信息
+    public int addInvitation(@Param("userid") Integer userid ,@Param("invid") Integer invid);
 }

@@ -1,5 +1,10 @@
 package com.kgc.service.impl;
 
+import com.kgc.client.Invitation_chatrecordClient;
+import com.kgc.pojo.Invitation_chatrecord;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -7,7 +12,7 @@ import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
-
+        Invitation_chatrecordClient chatrecordClient = null;
         Socket socket = null;//与服务器链接的套接字
         Scanner fromKey = null;//键盘输入流
         Scanner fromServer = null;//获取服务器发送的字节流

@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -25,7 +27,7 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
     public PageUtil<Invitation_invitation> getTb_invitationPage(Invitation_invitation  invitation, Integer pageIndex, Integer pageSize) {
         //封装成一个map对象
         Map<String,Object>map=new HashMap<>();
-       map.put("id",invitation.getId());
+        map.put("id",invitation.getId());
         map.put("title", invitation.getTitle());
         map.put("iname", invitation.getIname());
         map.put("content", invitation.getContent());
@@ -35,14 +37,16 @@ public class Invitation_invitationServiceImpl implements Invitation_invitationSe
         map.put("snum", invitation.getSnum());
         map.put("rnum", invitation.getRnum());
         map.put("seenum", invitation.getSeenum());
-        map.put("invitation",invitation);
+        //map.put("invitation",invitation);
         map.put("pageIndex",(pageIndex-1)*pageSize);
         map.put("pageSize",pageSize);
-        /*try {
-            invitationUtil.addDoc(invitationClient.getTb_invitationPage(map));
+        try {
+            List<Invitation_invitation> list=new ArrayList<>();
+            list=invitationClient.getTb_invitationPage(map).getList();
+            invitationUtil.addDoc(list);
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
         return invitationClient.getTb_invitationPage(map);
     }
     //根据帖子编号查询某一个帖子信息

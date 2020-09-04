@@ -41,7 +41,6 @@ public class RestInvitation_friendService {
     @RequestMapping("/updateislike")
     public int updateislike(@RequestParam(value="userid",required =false,defaultValue = "a1") String userid, @RequestParam(value="friendid",required =false,defaultValue = "b1") String friendid, @RequestParam(value="islike",required =false) String islike){
         return friendMapper.updateislike(userid,friendid,islike);
-
     }
 
     //根据用户编号和好友编号删除好友

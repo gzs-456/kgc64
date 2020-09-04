@@ -1,7 +1,10 @@
 package com.kgc.util;
 
+import com.kgc.pojo.Invitation_invitation;
+
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 public class PageUtil<T>  {
 	private Integer pageIndex;
@@ -9,6 +12,16 @@ public class PageUtil<T>  {
 	private Integer totalCount;
 	private Integer totalPage;
 	private List<T> list;
+	private Map<String, Object> map;
+
+	public Map<String, Object> getMap() {
+		return map;
+	}
+
+	public void setMap(Map<String, Object> map) {
+		this.map = map;
+	}
+
 	public Integer getPageIndex() {
 		return pageIndex;
 	}

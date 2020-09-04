@@ -13,4 +13,22 @@
         SELECT * FROM tb_user
         WHERE id=#{id}
     </select>
+
+    <insert id="Useradd" parameterType="com.kgc.pojo.User">
+         INSERT INTO tb_user VALUES(NULL,#{mobile},#{password},#{nickname},#{sex},#{birthday},#{avatar},#{email},#{regdate},
+          #{updatedate},#{lastdate},#{online},#{interest},#{fanscount},#{followcount})
+    </insert>
+
+    <update id="UserUpdate" parameterType="com.kgc.pojo.User">
+        UPDATE tb_user
+        SET mobile=#{mobile},password=#{password},nickname=#{nickname},sex=#{sex},birthday=#{birthday},
+        avatar=#{avatar},email=#{email},regdate=#{regdate},updatedate=#{updatedate},lastdate=#{lastdate},
+        online=#{online},interest=#{interest},fanscount=#{fanscount},followcount=#{followcount}
+        WHERE id=#{id}
+    </update>
+
+    <delete id="Userdelect" parameterType="int">
+        DELETE FROM tb_user
+	    WHERE id =#{id};
+    </delete>
 </mapper>  

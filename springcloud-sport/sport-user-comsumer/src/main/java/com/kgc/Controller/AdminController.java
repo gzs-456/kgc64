@@ -3,9 +3,7 @@ package com.kgc.Controller;
 import com.kgc.pojo.User_Admin;
 import com.kgc.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -24,5 +22,21 @@ public class AdminController {
     @RequestMapping("/getAdminId")
     public User_Admin getAdminId(Integer id) {
         return adminService.getAdminId(id);
+    }
+
+
+    @RequestMapping("/add")
+    public int add(@RequestBody User_Admin user_admin){
+        return adminService.add(user_admin);
+    }
+
+    @RequestMapping("/Update")
+    public int Update(@RequestBody User_Admin user_admin){
+        return adminService.Update(user_admin);
+    }
+
+    @RequestMapping("/delect/{id}")
+    public  int delect(@PathVariable("id") Integer id){
+        return adminService.delect(id);
     }
 }

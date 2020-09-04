@@ -12,4 +12,13 @@ public interface UserMapper {
 
     //查看个人信息
     public User getUserId(Integer id);
+
+    //添加用户信息
+    public int Useradd(User user);
+
+    //修改
+    public int UserUpdate(User user);
+
+    //删除
+    public  int Userdelect(Integer id);
 }

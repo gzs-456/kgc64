@@ -3,6 +3,7 @@ package com.kgc.service;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.kgc.mapper.AdminMapper;
+import com.kgc.pojo.User;
 import com.kgc.pojo.User_Admin;
 import com.kgc.util.MD5;
 import com.kgc.util.RedisUtils;
@@ -62,4 +63,20 @@ public class RestAdminService {
     public User_Admin getAdminId(@PathVariable("id") Integer id){
         return adminMapper.getAdminId(id);
     }
+
+    @RequestMapping("/add")
+    public int add(@RequestBody User_Admin user_admin){
+        return adminMapper.add(user_admin);
+    }
+
+    @RequestMapping("/Update")
+    public int Update(@RequestBody User_Admin user_admin){
+        return adminMapper.Update(user_admin);
+    }
+
+    @RequestMapping("/delect/{id}")
+    public  int delect(@PathVariable("id") Integer id){
+        return adminMapper.delect(id);
+    }
+
 }

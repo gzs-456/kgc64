@@ -27,4 +27,19 @@ public class UserServiceImpl implements UserService {
     public User getUserId(Integer id) {
         return userFeign.getUserId(id);
     }
+
+    @Override
+    public int Useradd(User user) {
+        return userFeign.Useradd(user);
+    }
+
+    @Override
+    public int UserUpdate(User user) {
+        return userFeign.UserUpdate(user);
+    }
+
+    @Override
+    public int Userdelect(Integer id) {
+        return userFeign.Userdelect(id);
+    }
 }

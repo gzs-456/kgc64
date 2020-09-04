@@ -36,10 +36,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Configuration
 public class InvitationUtil {
@@ -131,13 +128,21 @@ public class InvitationUtil {
     }
 
     //添加
-    public void addDoc(PageUtil<Invitation_invitation> page) throws IOException {
+    public void addDoc(List list) throws IOException {
         //准备json数据
-        Map<String,Object>  jsonMap = new HashMap<>();
-        List<Invitation_invitation> list=page.getList();
-        for(int i=0;i<list.size();i++){
-            System.out.println(list.get(i));
+        Map<String,Object> jsonMap = new HashMap<>();
+        List<Invitation_invitation> list1=list;
+
+        for(Object object:list){
+            String obj=object.toString();
+            String obj2=obj.substring(obj.indexOf("=",0),obj.indexOf(","));
+            String obj3=obj2.substring(obj2.indexOf("=")+1);
+            System.out.println(obj3);
         }
+        /*for(Invitation_invitation invitation:list1){
+            System.out.println(invitation.getId());
+        }*/
+
         /*jsonMap.put("id",invitation.getId());
         jsonMap.put("title", invitation.getTitle());
         jsonMap.put("iname", invitation.getIname());

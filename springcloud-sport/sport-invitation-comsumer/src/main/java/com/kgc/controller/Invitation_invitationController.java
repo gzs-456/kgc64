@@ -22,7 +22,7 @@ public class Invitation_invitationController {
         可以根据点赞数，推荐数，浏览数，发布时间 降序排列
      */
     @RequestMapping("/getTb_invitationPage")
-    public PageUtil<Invitation_invitation> getTb_invitationPage(@RequestBody Invitation_invitation  invitation,
+    public PageUtil<Invitation_invitation> getTb_invitationPage(Invitation_invitation  invitation,
            @RequestParam(value = "pageIndex",required =false, defaultValue = "1") Integer pageIndex,
            @RequestParam(value = "pageSize",required =false, defaultValue = "2") Integer pageSize) {
         return invitationService.getTb_invitationPage(invitation,pageIndex,pageSize);
